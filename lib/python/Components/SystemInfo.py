@@ -154,7 +154,7 @@ SystemInfo["OLDE2API"] = model in ("dm800", "su980")
 SystemInfo["7segment"] = displaytype == "7segment" or "7seg" in displaytype
 SystemInfo["HiSilicon"] = socfamily.startswith("hisi") or pathExists("/proc/hisi") or fileExists("/usr/bin/hihalt") or pathExists("/usr/lib/hisilicon")
 SystemInfo["DefineSat"] = platform in ("octagonhisil", "gbmv200") or model in ("ustym4kpro", "beyonwizv2", "viper4k")
-SystemInfo["AmlogicFamily"] = socfamily.startswith("aml") or fileExists("/proc/device-tree/amlogic-dt-id") or fileExists("/usr/bin/amlhalt") or pathExists("/sys/module/amports")
+SystemInfo["AmlogicFamily"] = socfamily.startswith("aml") or socfamily.startswith("meson") or fileExists("/proc/device-tree/amlogic-dt-id") or fileExists("/usr/bin/amlhalt") or pathExists("/sys/module/amports")
 SystemInfo["OSDAnimation"] = fileCheck("/proc/stb/fb/animation_mode")
 SystemInfo["RecoveryMode"] = fileCheck("/proc/stb/fp/boot_mode") and model not in ("hd51", "h7")
 SystemInfo["AndroidMode"] =  SystemInfo["RecoveryMode"] and model == "multibox" or brand in ("hypercube", "linkdroid", "mecool", "wetek")
@@ -183,3 +183,4 @@ SystemInfo["StandbyState"] = False
 SystemInfo["HasH9SD"] = model in ("h9", "i55plus") and pathExists("/dev/mmcblk0p1")
 SystemInfo["HasSDnomount"] = model in ("h9", "h3", "i55plus") and (False, "none") or model in ("multibox", "h9combo", "h3") and (True, "mmcblk0")
 SystemInfo["canBackupEMC"] = model in ("hd51", "h7") and ("disk.img", "%s" % SystemInfo["MultibootStartupDevice"]) or platform == "edision4k" and ("emmc.img", "%s" % SystemInfo["MultibootStartupDevice"]) or SystemInfo["DefineSat"] and ("usb_update.bin", "none")
+SystemInfo["CanSyncMode"] = fileExists("/proc/stb/video/sync_mode_choices")

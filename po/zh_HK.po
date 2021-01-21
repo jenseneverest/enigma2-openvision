@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-11 23:06+0330\n"
+"POT-Creation-Date: 2021-01-20 16:44+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -1045,9 +1045,9 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s  (Default: %s)"
-msgstr "預設"
+msgstr ""
 
 #, python-format
 msgid "%s %s free disk space"
@@ -1384,6 +1384,10 @@ msgstr "<預設錄影位置>"
 
 msgid "<Last timer location>"
 msgstr "<最近一次定時錄影位置>"
+
+#, fuzzy
+msgid "<Press OK to perform action>"
+msgstr "按OK來切換選擇."
 
 msgid "<unknown>"
 msgstr "<未知>"
@@ -1848,12 +1852,6 @@ msgstr ""
 msgid "Allow unsupported modes"
 msgstr ""
 
-msgid "Allows receiver to read the stored EPG data regularly."
-msgstr ""
-
-msgid "Allows receiver to store the EPG data regularly."
-msgstr ""
-
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr ""
 
@@ -1875,6 +1873,12 @@ msgstr ""
 #, fuzzy
 msgid "Allows you to show images."
 msgstr " 是否安裝套裝軟體:\n"
+
+msgid "Allows your %s %s to read the stored EPG data regularly."
+msgstr ""
+
+msgid "Allows your %s %s to store the EPG data regularly."
+msgstr ""
 
 msgid "Alpha"
 msgstr "透明度"
@@ -1923,7 +1927,7 @@ msgstr ""
 msgid "Always include ECM in recordings"
 msgstr ""
 
-msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your %s %s. Default: off."
 msgstr ""
 
 msgid "American Samoa"
@@ -1954,9 +1958,8 @@ msgstr ""
 msgid "Andorra"
 msgstr ""
 
-#, fuzzy
 msgid "Android Mode"
-msgstr "創作模式"
+msgstr ""
 
 msgid "Angola"
 msgstr ""
@@ -2497,11 +2500,18 @@ msgstr "誤碼率:"
 msgid "Bitrate:"
 msgstr "誤碼率:"
 
+msgid "Black Screen"
+msgstr ""
+
 msgid "Black screen"
 msgstr ""
 
 msgid "Black screen till locked"
 msgstr ""
+
+#, fuzzy
+msgid "Blacklist"
+msgstr "黑名單"
 
 msgid "Blinking REC"
 msgstr ""
@@ -3025,10 +3035,10 @@ msgstr ""
 msgid "Choose the location for crash and debug logs folder."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when your %s %s is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when your %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose whether AAC sound tracks should be transcoded."
@@ -3571,7 +3581,7 @@ msgstr ""
 msgid "Configure the video output mode (or resolution)."
 msgstr ""
 
-msgid "Configure the way in which the receiver changes channels."
+msgid "Configure the way in which your %s %s changes channels."
 msgstr ""
 
 msgid "Configure the width of the TrueType font letters used for teletext."
@@ -3624,10 +3634,6 @@ msgstr ""
 
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr ""
-
-#, fuzzy
-msgid "Configure your NTP server."
-msgstr "配置功能變數名稱伺服器"
 
 msgid "Configure your internal LAN"
 msgstr "配置無線網路"
@@ -3812,7 +3818,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Cron Timers"
-msgstr "結束時間"
+msgstr "計時器"
 
 #, fuzzy
 msgid "Cron manager"
@@ -4315,7 +4321,7 @@ msgstr "刪除"
 
 #, fuzzy
 msgid "Delete EPG Cache"
-msgstr "刪除"
+msgstr "選擇Image"
 
 #, fuzzy
 msgid "Delete Image"
@@ -4566,6 +4572,9 @@ msgstr ""
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display oscam information."
+msgstr ""
+
 msgid "Display selection list as a selection menu"
 msgstr ""
 
@@ -4742,12 +4751,13 @@ msgstr ""
 msgid "Do you want to update the package:\n"
 msgstr " 是否升級套裝軟體:\n"
 
-#, python-format
-msgid "Do you want to update your receiver to %s?"
-msgstr ""
+#, fuzzy, python-format
+msgid "Do you want to update to %s"
+msgstr " 是否升級套裝軟體:\n"
 
-msgid "Do you want to update your receiver?"
-msgstr ""
+#, fuzzy, python-format
+msgid "Do you want to update your %s %s?"
+msgstr " 是否恢復您的設定?"
 
 msgid "Documentary"
 msgstr ""
@@ -4767,6 +4777,10 @@ msgstr "捷克共和國"
 
 msgid "Don't ask again!"
 msgstr ""
+
+#, fuzzy
+msgid "Don't restart"
+msgstr "重新啟動"
 
 msgid "Don't save and stop timeshift"
 msgstr ""
@@ -4792,9 +4806,8 @@ msgstr ""
 msgid "Don't zap and remove timer"
 msgstr ""
 
-#, fuzzy
 msgid "Donate: "
-msgstr "誤碼率:"
+msgstr ""
 
 msgid "Done"
 msgstr ""
@@ -4805,9 +4818,8 @@ msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] ""
 msgstr[1] ""
 
-#, fuzzy
 msgid "Down"
-msgstr "AC3 縮減混音"
+msgstr ""
 
 msgid "Download plugins"
 msgstr ""
@@ -5674,12 +5686,6 @@ msgstr "出廠設定"
 msgid "Factory release: "
 msgstr "出廠設定"
 
-msgid ""
-"Factory reset will restore your receiver to its default configuration. All user data including system settings, tuner configuration, bouquets, services and plugins will be DELETED. Recordings and other files stored on HDD and USB media will remain intact. After completion, the system will restart automatically!\n"
-"\n"
-"Do you really want to proceed?"
-msgstr ""
-
 msgid "Fade the infobar when hiding"
 msgstr ""
 
@@ -5969,12 +5975,22 @@ msgstr ""
 msgid "Front Panel Display"
 msgstr ""
 
+#, python-format
+msgid ""
+"Front panel your %s %s will be updated\n"
+"This may take a few minutes"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Front processor version: %s"
 msgstr "新版本:"
 
 msgid "Full Range RGB"
 msgstr ""
+
+#, fuzzy
+msgid "Full factory reset"
+msgstr "出廠設定"
 
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if the content aspect ratio does not match the screen ratio)
 msgid "Full screen"
@@ -6410,6 +6426,9 @@ msgstr ""
 msgid "History next"
 msgstr ""
 
+msgid "Hold First Frame"
+msgstr ""
+
 msgid "Hold screen"
 msgstr ""
 
@@ -6486,9 +6505,6 @@ msgid "Hotkey zap"
 msgstr ""
 
 msgid "Hotplug"
-msgstr ""
-
-msgid "Hour"
 msgstr ""
 
 msgid "Hourly"
@@ -6666,6 +6682,9 @@ msgstr ""
 msgid "Image: "
 msgstr ""
 
+msgid "Immediately restart selected devices."
+msgstr ""
+
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr ""
 
@@ -6755,9 +6774,8 @@ msgstr ""
 msgid "Indonesian"
 msgstr ""
 
-#, fuzzy
 msgid "Inetd Recovery"
-msgstr "退出編輯"
+msgstr ""
 
 msgid "Inetd recovery"
 msgstr ""
@@ -6832,7 +6850,7 @@ msgstr "輸入 1"
 
 #, fuzzy
 msgid "Input Devices"
-msgstr "頻道"
+msgstr "輸入 1"
 
 msgid "Input Stream ID"
 msgstr ""
@@ -6909,6 +6927,9 @@ msgid "Internal hdd only"
 msgstr ""
 
 msgid "Internet"
+msgstr ""
+
+msgid "Internet (ntp)"
 msgstr ""
 
 msgid "Interval between keys when repeating:"
@@ -7315,9 +7336,8 @@ msgstr ""
 msgid "Load"
 msgstr "載入"
 
-#, fuzzy
 msgid "Load EPG Cache"
-msgstr "載入"
+msgstr ""
 
 msgid "Load only specific days in EPG"
 msgstr ""
@@ -7533,9 +7553,10 @@ msgstr ""
 msgid "Manufacturer"
 msgstr "製造商"
 
+#, python-format
 msgid ""
 "Manufacturer reset in progress\n"
-"Please wait until enigma2 restarts"
+"Please wait until your %s %s restarts"
 msgstr ""
 
 msgid "Mara M9"
@@ -7828,7 +7849,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Move to first line / screen"
-msgstr "向上移動到第一個項目"
+msgstr "向下移動到下一個項目"
 
 #, fuzzy
 msgid "Move to last line / screen"
@@ -7853,13 +7874,11 @@ msgstr "退回上一個章節"
 msgid "Move to the previous skin"
 msgstr "向上移動到上一個項目"
 
-#, fuzzy
 msgid "Move up a line"
-msgstr "向上移動到第一個項目"
+msgstr ""
 
-#, fuzzy
 msgid "Move up a screen"
-msgstr "向上移動到上一個項目"
+msgstr ""
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -8033,12 +8052,8 @@ msgstr ""
 msgid "NOW"
 msgstr "現在"
 
-msgid "NTP"
+msgid "NTP Hostname"
 msgstr ""
-
-#, fuzzy
-msgid "NTP server"
-msgstr "DNS伺服器"
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -8143,6 +8158,10 @@ msgstr ""
 
 msgid "Network:"
 msgstr "網路:"
+
+#, fuzzy
+msgid "Never"
+msgstr "從不"
 
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
@@ -8575,9 +8594,6 @@ msgstr ""
 msgid "On valid ONIDs, ignore frequency sub network part"
 msgstr ""
 
-msgid "Once per day"
-msgstr ""
-
 msgid "One"
 msgstr "1"
 
@@ -8808,14 +8824,15 @@ msgid "Parent directory"
 msgstr ""
 
 #, fuzzy
+msgid "Parental Control"
+msgstr "家長控制"
+
+#, fuzzy
 msgid "Parental Control Setup"
 msgstr "家長控制設定"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
-
-msgid "Parental control"
-msgstr "家長控制"
 
 msgid "Parental control services editor"
 msgstr ""
@@ -9215,15 +9232,8 @@ msgstr "請稍候,我們正在測驗您的網路..."
 msgid "Please wait while your network is restarting..."
 msgstr "正在重啟網路...請稍候..."
 
-#, fuzzy
-msgid "Please wait, restarting cardserver."
-msgstr "請稍候，正在載入圖片..."
-
-msgid "Please wait, restarting softcam and cardserver."
-msgstr ""
-
-#, fuzzy
-msgid "Please wait, restarting softcam."
+#, fuzzy, python-format
+msgid "Please wait, restarting %s."
 msgstr "正在載入列表... 請稍候..."
 
 msgid "Please wait..."
@@ -9334,9 +9344,8 @@ msgstr ""
 msgid "Power On Display"
 msgstr ""
 
-#, fuzzy
 msgid "Power Timers"
-msgstr "計時器"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr ""
@@ -9797,12 +9806,6 @@ msgstr ""
 msgid "Receiver or driver does not support FCC"
 msgstr ""
 
-msgid "Receiver reads the stored EPG data every (hours)."
-msgstr ""
-
-msgid "Receiver stores the EPG data every (hours)."
-msgstr ""
-
 msgid "Reception settings"
 msgstr ""
 
@@ -9859,7 +9862,7 @@ msgstr "正在錄製"
 
 #, fuzzy
 msgid "Recovery Mode"
-msgstr "[移動模式]"
+msgstr "用戶定義"
 
 msgid "Red"
 msgstr ""
@@ -9953,11 +9956,46 @@ msgstr ""
 msgid "Remove all alternatives"
 msgstr "移除所有項目"
 
+msgid "Remove all bouquet/tuning data"
+msgstr ""
+
+#, fuzzy
+msgid "Remove all keymap data"
+msgstr "移除標記"
+
 msgid "Remove all logfiles"
 msgstr ""
 
+#, fuzzy
+msgid "Remove all network data"
+msgstr "移除所有新發現標記"
+
 msgid "Remove all new found flags"
 msgstr "移除所有新發現標記"
+
+#, fuzzy
+msgid "Remove all other data"
+msgstr "移除所有項目"
+
+#, fuzzy
+msgid "Remove all plugin setting data"
+msgstr "移除插件"
+
+#, fuzzy
+msgid "Remove all resume point data"
+msgstr "移除所有新發現標記"
+
+#, fuzzy
+msgid "Remove all settings data"
+msgstr "移除所有項目"
+
+#, fuzzy
+msgid "Remove all skin data"
+msgstr "移除所有新發現標記"
+
+#, fuzzy
+msgid "Remove all timer data"
+msgstr "移除所有項目"
 
 msgid "Remove bookmark"
 msgstr ""
@@ -10111,6 +10149,9 @@ msgid "Reset persistent PIN code"
 msgstr ""
 
 msgid "Reset playback position"
+msgstr ""
+
+msgid "Reset the selected devices when the GREEN button is pressed."
 msgstr ""
 
 msgid "Reset video enhancement settings to system defaults?"
@@ -10458,9 +10499,8 @@ msgstr "保存"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#, fuzzy
 msgid "Save EPG Cache"
-msgstr "單個-EPG"
+msgstr ""
 
 msgid "Save EPG data"
 msgstr ""
@@ -10695,6 +10735,36 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
+msgstr ""
+
+msgid "Select 'Yes' to remove all main settings configuration data. Selecting this option will set all Enigma2 settings back to their default values.  This will also cause Enigma2 to run the Welcome Wizard on restart."
+msgstr ""
+
+msgid "Select 'Yes' to remove all media player resume data. Selecting this option will remove the data used to allow playback of media files to resume from the position where playback was last stopped. Playback position of recordings is not affected."
+msgstr ""
+
+msgid "Select 'Yes' to remove all network data. Selecting this option will remove all network data including automounts and network connection data including connection accounts and passwords. This could cause some Enigma2 functions to fail if they are configured to use these network resources."
+msgstr ""
+
+msgid "Select 'Yes' to remove all other files and directories not covered by the options above."
+msgstr ""
+
+msgid "Select 'Yes' to remove all plugin configuration data. Selecting this option will remove all plugin configuration data that is stored in the Enigma2 configuration folder. This will cause all affected plugins to return to their default settings. This could cause some plugins to not function until configured."
+msgstr ""
+
+msgid "Select 'Yes' to remove all settings, tuning data, timers, resume pointers etc. Selecting this option will restore the configuration to the initial settings before any configuration settings were applied. This is the most reliable form of Factory Reset."
+msgstr ""
+
+msgid "Select 'Yes' to remove all timer configuration data. Selecting this option will clear all timers, autotimers and power timers."
+msgstr ""
+
+msgid "Select 'Yes' to remove all tuning data. Selecting this option will remove all tuning and bouquet data and will make timers non functional until the receiver is retuned."
+msgstr ""
+
+msgid "Select 'Yes' to remove all user customisations of skin data. Selecting this option will remove all user based skin customisations. All affected skins will return to their standard settings. This will also clear any customied boot logos and backdrops."
+msgstr ""
+
 msgid "Select 'Yes' when you want to configure this tuner for ATSC"
 msgstr ""
 
@@ -10743,10 +10813,6 @@ msgstr ""
 msgid "Select CAId"
 msgstr ""
 
-#, fuzzy
-msgid "Select Card Server"
-msgstr "選擇一部電影"
-
 msgid "Select Channel"
 msgstr ""
 
@@ -10756,17 +10822,19 @@ msgstr ""
 msgid "Select HDD"
 msgstr "選擇硬碟"
 
-#, fuzzy
-msgid "Select Softcam"
-msgstr "選擇位置"
-
 msgid "Select a bouquet"
+msgstr ""
+
+msgid "Select a cardserver from the available list."
 msgstr ""
 
 msgid "Select a movie"
 msgstr "選擇一部電影"
 
 msgid "Select a network adapter"
+msgstr ""
+
+msgid "Select a softcam from the available list."
 msgstr ""
 
 msgid "Select a tuner"
@@ -10796,6 +10864,10 @@ msgstr ""
 
 msgid "Select between entering an IP address or a domain."
 msgstr ""
+
+#, fuzzy
+msgid "Select cardserver"
+msgstr "選擇一部電影"
 
 msgid "Select channel"
 msgstr ""
@@ -10837,6 +10909,9 @@ msgstr ""
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr ""
 
+msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
+msgstr ""
+
 msgid "Select input device"
 msgstr ""
 
@@ -10874,6 +10949,10 @@ msgstr "選擇並添加頻道..."
 
 msgid "Select slot"
 msgstr ""
+
+#, fuzzy
+msgid "Select softcam"
+msgstr "選擇位置"
 
 msgid "Select sort method:"
 msgstr ""
@@ -11307,9 +11386,6 @@ msgid "Setup menu"
 msgstr ""
 
 msgid "Setup mode"
-msgstr ""
-
-msgid "Setup network time synchronization interval."
 msgstr ""
 
 msgid "Setup your positioner"
@@ -11882,6 +11958,10 @@ msgstr "斯洛伐克"
 msgid "Slow"
 msgstr "慢的"
 
+#, fuzzy
+msgid "Slow Motion"
+msgstr "存貯位置"
+
 msgid "Slow motion speeds"
 msgstr ""
 
@@ -11915,20 +11995,19 @@ msgstr ""
 msgid "SocketMMI"
 msgstr ""
 
-#, fuzzy
 msgid "Soft multiboot: "
-msgstr "多星"
+msgstr ""
 
 #, fuzzy
 msgid "Softcam"
 msgstr "保護設定"
 
 #, fuzzy
-msgid "Softcam Setup"
+msgid "Softcam Actions"
 msgstr "保護設定"
 
 #, fuzzy
-msgid "Softcam setup"
+msgid "Softcam Setup"
 msgstr "保護設定"
 
 msgid "Software"
@@ -12129,9 +12208,8 @@ msgstr ""
 msgid "Standby"
 msgstr "待機"
 
-#, fuzzy
 msgid "Standby & Restart"
-msgstr "待機"
+msgstr ""
 
 #, fuzzy
 msgid "Standby LED"
@@ -12360,9 +12438,8 @@ msgstr ""
 msgid "Streaming"
 msgstr ""
 
-#, fuzzy
 msgid "Streaming Clients"
-msgstr "顯示選項"
+msgstr ""
 
 msgid "Streaming clients info"
 msgstr ""
@@ -12578,16 +12655,7 @@ msgstr ""
 msgid "Symbol rate:"
 msgstr ""
 
-msgid "Sync NTP every (minutes)"
-msgstr ""
-
 msgid "Sync failure moving back to origin !"
-msgstr ""
-
-msgid "Sync time using"
-msgstr ""
-
-msgid "Synchronize system time using transponder or internet."
 msgstr ""
 
 msgid "Syrian Arab Republic"
@@ -12808,6 +12876,10 @@ msgstr ""
 msgid "The MovieCut plugin is not installed."
 msgstr "這個插件未安裝."
 
+#, fuzzy
+msgid "The PIN code entered is incorrect."
+msgstr "密碼輸入有誤."
+
 msgid "The PIN code has been changed successfully."
 msgstr ""
 
@@ -12855,6 +12927,9 @@ msgid "The frame rate of the recording. Ideally, this will match the frame rate 
 msgstr ""
 
 msgid "The height of the picture. The input will be scaled to match this value."
+msgstr ""
+
+msgid "The hostname or the IP address of the NTP server to synchronise the time with."
 msgstr ""
 
 msgid ""
@@ -12916,10 +12991,10 @@ msgid ""
 "Please install it."
 msgstr ""
 
-msgid "The speed of the fan when receiver is in normal use."
+msgid "The speed of the fan when your %s %s is in normal use."
 msgstr ""
 
-msgid "The speed of the fan when receiver is in standby mode."
+msgid "The speed of the fan when your %s %s is in standby mode."
 msgstr ""
 
 #, python-format
@@ -12936,15 +13011,18 @@ msgstr "計時器文件（timers.xml）已損壞，無法載入."
 msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
-msgid "The user interface of your receiver is restarting"
+#, python-format
+msgid "The user interface of your %s %s is restarting"
 msgstr ""
 
+#, python-format
 msgid ""
-"The user interface of your receiver is restarting\n"
+"The user interface of your %s %s is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
 
-msgid "The user interface of your receiver is restarting in debug mode"
+#, python-format
+msgid "The user interface of your %s %s is restarting in debug mode"
 msgstr ""
 
 msgid "The width of the picture. The input will be scaled to match this value."
@@ -13013,6 +13091,12 @@ msgid "This field allows you to search an additional symbol rate up to %s."
 msgstr ""
 
 msgid ""
+"This image is intended for developers and testers.\n"
+"No support will be provided!\n"
+"Do you understand this?"
+msgstr ""
+
+msgid ""
 "This info is for developers only.\n"
 "For normal users it is not relevant.\n"
 "Please don't panic if you see values displayed looking suspicious!"
@@ -13024,7 +13108,7 @@ msgstr ""
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr ""
 
-msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since the receiver was last booted."
+msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since your %s %s was last booted."
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -13136,6 +13220,9 @@ msgid "This option allows you to show the full screen path leading to the curren
 msgstr ""
 
 msgid "This option allows you to switch audio to BT speakers."
+msgstr ""
+
+msgid "This option allows you to use video sync mode."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -13278,6 +13365,9 @@ msgstr ""
 #, fuzzy
 msgid "Time style"
 msgstr "定時類型"
+
+msgid "Time synchronization method"
+msgstr ""
 
 msgid "Time to execute command or script"
 msgstr ""
@@ -13513,7 +13603,7 @@ msgid "Transponder"
 msgstr "轉發器"
 
 #, fuzzy
-msgid "Transponder time"
+msgid "Transponder Time"
 msgstr "轉發器"
 
 #, fuzzy
@@ -13714,9 +13804,10 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
+#, python-format
 msgid ""
 "Unattended update in progress\n"
-"Please wait until your receiver reboots\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 
@@ -13794,6 +13885,9 @@ msgstr "解除安裝(Unmount)"
 msgid "Unsupported"
 msgstr "不支援的"
 
+msgid "Until standby/restart"
+msgstr ""
+
 #, fuzzy
 msgid "Unzipping Image"
 msgstr "下載中"
@@ -13827,8 +13921,9 @@ msgid_plural "Update completed, %d packages were installed."
 msgstr[0] "Update completed, %d package was installed."
 msgstr[1] "Update completed, %d packages were installed."
 
-msgid "Update completed. Do you want to reboot your receiver?"
-msgstr ""
+#, fuzzy, python-format
+msgid "Update completed. Do you want to reboot your %s %s?"
+msgstr " 是否恢復您的設定?"
 
 #, fuzzy
 msgid "Update failed!"
@@ -14017,9 +14112,8 @@ msgstr "用戶定義"
 msgid "User Interface"
 msgstr "通用介面 (CI)"
 
-#, fuzzy
 msgid "User Interface Setup"
-msgstr "通用介面 (CI)"
+msgstr ""
 
 #, fuzzy
 msgid "User Mode"
@@ -14106,7 +14200,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Video Mode"
-msgstr "S-Video"
+msgstr "用戶定義"
 
 msgid "Video PID"
 msgstr ""
@@ -14138,6 +14232,9 @@ msgid "Video output"
 msgstr ""
 
 msgid "Video setup"
+msgstr ""
+
+msgid "Video sync mode"
 msgstr ""
 
 msgid "Video wizard"
@@ -14603,21 +14700,6 @@ msgstr ""
 msgid "When enabled, the length of each recording will be shown in the movielist (this might cause some additional loading time)."
 msgstr ""
 
-msgid "When enabled, the receiver will automatically use the audio track which you selected before."
-msgstr ""
-
-msgid "When enabled, the receiver will automatically use the subtitles which you selected before."
-msgstr ""
-
-msgid "When enabled, the receiver will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
-msgstr ""
-
-msgid "When enabled, the receiver will select an AC3 track (when available)."
-msgstr ""
-
-msgid "When enabled, the receiver will select an AC3+ track (when available)."
-msgstr ""
-
 msgid "When enabled, this setting has more weight than 'Preferred tuner for recordings'."
 msgstr ""
 
@@ -14634,6 +14716,21 @@ msgid "When enabled, you will see dev, staticdev, dbg, doc, src and po packages 
 msgstr ""
 
 msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
+msgid "When enabled, your %s %s will automatically use the audio track which you selected before."
+msgstr ""
+
+msgid "When enabled, your %s %s will automatically use the subtitles which you selected before."
+msgstr ""
+
+msgid "When enabled, your %s %s will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
+msgstr ""
+
+msgid "When enabled, your %s %s will select an AC3 track (when available)."
+msgstr ""
+
+msgid "When enabled, your %s %s will select an AC3+ track (when available)."
 msgstr ""
 
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
@@ -14914,6 +15011,36 @@ msgstr ""
 msgid "Your %s %s (kernel %s) does not have an internet connection"
 msgstr ""
 
+#, python-format
+msgid "Your %s %s goes to WOL"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting into android mode"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting into recovery mode"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is shutting down"
+msgstr ""
+
+msgid "Your %s %s reads the stored EPG data every (hours)."
+msgstr ""
+
+msgid "Your %s %s stores the EPG data every (hours)."
+msgstr ""
+
+#, python-format
+msgid "Your %s %s?"
+msgstr ""
+
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"
 msgstr ""
 
@@ -14923,14 +15050,10 @@ msgstr "您的收藏超過單層DVD大小,您將需要一個空白雙層DVD！�
 msgid "Your current collection will get lost!"
 msgstr "您當前的收集將丟失!"
 
+#, python-format
 msgid ""
-"Your front panel will be updated\n"
-"This may take a few minutes"
-msgstr ""
-
-msgid ""
-"Your front processor will be updated\n"
-"Please wait until your receiver reboots\n"
+"Your frontprocessor will be updated\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 
@@ -14960,9 +15083,6 @@ msgstr ""
 msgid "Your receiver does not have an internet connection"
 msgstr ""
 
-msgid "Your receiver goes to WOL"
-msgstr ""
-
 msgid "Your receiver is not connected to the internet, please check your network settings and try again."
 msgstr ""
 
@@ -14981,19 +15101,8 @@ msgid ""
 "Please press OK to continue."
 msgstr ""
 
-msgid "Your receiver is rebooting"
-msgstr ""
-
-msgid "Your receiver is rebooting into android mode"
-msgstr ""
-
-msgid "Your receiver is rebooting into recovery mode"
-msgstr ""
-
-msgid "Your receiver is shutting down"
-msgstr ""
-
-msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
+#, python-format
+msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your %s %s."
 msgstr ""
 
 #, python-format
@@ -15197,6 +15306,10 @@ msgstr ""
 msgid "always"
 msgstr "始終"
 
+#, fuzzy
+msgid "and"
+msgstr "自動"
+
 msgid "and never ask in this session again"
 msgstr ""
 
@@ -15267,9 +15380,6 @@ msgstr "黑色"
 msgid "black & white"
 msgstr ""
 
-msgid "blacklist"
-msgstr "黑名單"
-
 msgid "blue"
 msgstr "藍色"
 
@@ -15291,6 +15401,10 @@ msgstr ""
 #, fuzzy
 msgid "cancel"
 msgstr "取消"
+
+#, fuzzy
+msgid "cardserver"
+msgstr "從這裏開始剪輯"
 
 msgid "cartoon/puppets"
 msgstr ""
@@ -16185,6 +16299,10 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
+#, fuzzy
+msgid "softcam"
+msgstr "重新測驗"
+
 msgid "special (general)"
 msgstr ""
 
@@ -16327,9 +16445,6 @@ msgid "unpublished"
 msgstr ""
 
 msgid "untestable"
-msgstr ""
-
-msgid "until standby/restart"
 msgstr ""
 
 msgid "use best / controlled by HDMI"

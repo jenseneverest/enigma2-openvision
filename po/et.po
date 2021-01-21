@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-11 23:06+0330\n"
+"POT-Creation-Date: 2021-01-20 16:44+0330\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -1110,9 +1110,9 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s  (Default: %s)"
-msgstr "Vaikimisi"
+msgstr ""
 
 #, python-format
 msgid "%s %s free disk space"
@@ -1455,6 +1455,10 @@ msgstr "<Salvestuste tavaasukoht >"
 
 msgid "<Last timer location>"
 msgstr "<Viimase taimeri asukoht>"
+
+#, fuzzy
+msgid "<Press OK to perform action>"
+msgstr "Valiku muutmiseks vajuta OK."
 
 msgid "<unknown>"
 msgstr "<tundmatu>"
@@ -1950,12 +1954,6 @@ msgstr "Luba vaegkuuljate subtiitrid"
 msgid "Allow unsupported modes"
 msgstr ""
 
-msgid "Allows receiver to read the stored EPG data regularly."
-msgstr ""
-
-msgid "Allows receiver to store the EPG data regularly."
-msgstr ""
-
 #, fuzzy
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr "Kasuta teleri pulti"
@@ -1980,6 +1978,12 @@ msgid "Allows you to show images."
 msgstr ""
 "Kas soovid paigaldada image\n"
 "%s"
+
+msgid "Allows your %s %s to read the stored EPG data regularly."
+msgstr ""
+
+msgid "Allows your %s %s to store the EPG data regularly."
+msgstr ""
 
 msgid "Alpha"
 msgstr "Alfa"
@@ -2029,7 +2033,8 @@ msgstr "Peida alati inforiba"
 msgid "Always include ECM in recordings"
 msgstr "Salvestised sisaldavad ka ECM sõnumeid"
 
-msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+#, fuzzy
+msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your %s %s. Default: off."
 msgstr "Salvestised sisaldavad alati ka ECM sõnumeid. See valik alistab üksiku taimeri seadistused globaalselt ja võimaldab salvestisi hiljem dekrüptida (offlain dekodeerimine), kui vastuvõtja seda toetab. Vaikimisi: välja lülitatud."
 
 msgid "American Samoa"
@@ -2059,9 +2064,8 @@ msgstr "Ja seab vastuvõtja ootele üle "
 msgid "Andorra"
 msgstr "Andorra"
 
-#, fuzzy
 msgid "Android Mode"
-msgstr "3d režiim"
+msgstr ""
 
 msgid "Angola"
 msgstr "Angola"
@@ -2617,11 +2621,19 @@ msgstr "Bitikiirus:"
 msgid "Bitrate:"
 msgstr "Bitikiirus:"
 
+#, fuzzy
+msgid "Black Screen"
+msgstr "Must ekraan"
+
 msgid "Black screen"
 msgstr "Must ekraan"
 
 msgid "Black screen till locked"
 msgstr "Must ekraan lukustumiseni"
+
+#, fuzzy
+msgid "Blacklist"
+msgstr "keelatud"
 
 msgid "Blinking REC"
 msgstr ""
@@ -3148,10 +3160,10 @@ msgstr ""
 msgid "Choose the location for crash and debug logs folder."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when your %s %s is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when your %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 #, fuzzy
@@ -3229,7 +3241,7 @@ msgstr "Kasutaja režiim"
 
 #, fuzzy
 msgid "Client Tuner Configuration"
-msgstr "Tuuneri seaded"
+msgstr "Tuuneri seadistus"
 
 msgid "Client is streaming from this box!"
 msgstr ""
@@ -3704,7 +3716,8 @@ msgstr "Määra, kuidas tähistatakse salvestuste olek filmilistis."
 msgid "Configure the video output mode (or resolution)."
 msgstr "Määra pildi väljundi režiim (või resolutsioon)"
 
-msgid "Configure the way in which the receiver changes channels."
+#, fuzzy
+msgid "Configure the way in which your %s %s changes channels."
 msgstr "Määra viis, kuidas vastuvõtja vahetab kanaleid."
 
 msgid "Configure the width of the TrueType font letters used for teletext."
@@ -3758,10 +3771,6 @@ msgstr "Määra, millist tuunerit eelistatakse kui sama teenus on saadaval erine
 
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr "Määra, millist tuunerit eelistatakse, kui saadaval on rohkem kui üks tuuner. Valikul 'automaatne' annab süsteem eelistuse tuunerile, millel on kõige vähem kanaleid/satelliite."
-
-#, fuzzy
-msgid "Configure your NTP server."
-msgstr "Seadista nimeserverid"
 
 msgid "Configure your internal LAN"
 msgstr "Seadista sisemine LAN võrk"
@@ -3948,7 +3957,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Cron Timers"
-msgstr "Muuda taimerit"
+msgstr "Taimer"
 
 #, fuzzy
 msgid "Cron manager"
@@ -4453,7 +4462,7 @@ msgstr "Kustuta"
 
 #, fuzzy
 msgid "Delete EPG Cache"
-msgstr "Kustuta"
+msgstr "Kustuta image"
 
 #, fuzzy
 msgid "Delete Image"
@@ -4711,6 +4720,9 @@ msgstr "Esipaneel ja kasutajaliides"
 msgid "Display message before playing next movie"
 msgstr "Teavita enne järgmise filmi alustamist"
 
+msgid "Display oscam information."
+msgstr ""
+
 msgid "Display selection list as a selection menu"
 msgstr ""
 
@@ -4893,12 +4905,13 @@ msgstr "Kas soovid valida teistsuguse kujunduse?"
 msgid "Do you want to update the package:\n"
 msgstr "Kas soovid parendada paketti:\n"
 
-#, python-format
-msgid "Do you want to update your receiver to %s?"
+#, fuzzy, python-format
+msgid "Do you want to update to %s"
 msgstr "Kas soovid uuendada vastuvõtja tarkvara %s?"
 
-msgid "Do you want to update your receiver?"
-msgstr "Kas soovid uuendada vastuvõtja tarkvara?"
+#, fuzzy, python-format
+msgid "Do you want to update your %s %s?"
+msgstr "Kas soovid uuendada vastuvõtja tarkvara %s?"
 
 #, fuzzy
 msgid "Documentary"
@@ -4918,6 +4931,10 @@ msgstr "Dominikaani Vabariik"
 
 msgid "Don't ask again!"
 msgstr ""
+
+#, fuzzy
+msgid "Don't restart"
+msgstr "Seiskamine"
 
 msgid "Don't save and stop timeshift"
 msgstr "Ära salvesta ning peata ajanihe"
@@ -4943,9 +4960,8 @@ msgstr "Ära vaheta kanalit ja keela taimer"
 msgid "Don't zap and remove timer"
 msgstr "Ära vaheta kanalit ja eemalda taimer"
 
-#, fuzzy
 msgid "Donate: "
-msgstr "Bitikiirus:"
+msgstr ""
 
 msgid "Done"
 msgstr ""
@@ -4956,9 +4972,8 @@ msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "Valmis - paigaldatud, täiendatud või eemaldatud %d pakett (%s)"
 msgstr[1] "Valmis - paigaldatud, täiendatud või eemaldatud %d paketti (%s)"
 
-#, fuzzy
 msgid "Down"
-msgstr "DTS > stereo"
+msgstr ""
 
 msgid "Download plugins"
 msgstr "Paigalda laiendusi"
@@ -5855,12 +5870,6 @@ msgstr "Algseadistus"
 msgid "Factory release: "
 msgstr "Algseadistus"
 
-msgid ""
-"Factory reset will restore your receiver to its default configuration. All user data including system settings, tuner configuration, bouquets, services and plugins will be DELETED. Recordings and other files stored on HDD and USB media will remain intact. After completion, the system will restart automatically!\n"
-"\n"
-"Do you really want to proceed?"
-msgstr ""
-
 msgid "Fade the infobar when hiding"
 msgstr ""
 
@@ -6151,9 +6160,17 @@ msgstr "Reede"
 msgid "From:"
 msgstr "Kellelt:"
 
-#, fuzzy
 msgid "Front Panel Display"
-msgstr "Sisselülitus näidikul"
+msgstr ""
+
+#, fuzzy, python-format
+msgid ""
+"Front panel your %s %s will be updated\n"
+"This may take a few minutes"
+msgstr ""
+"Esiprotsessorit uuendatakse\n"
+"Oota vastuvõtja taaskäivitumist\n"
+"See võib võtta mõne minuti"
 
 #, fuzzy, python-format
 msgid "Front processor version: %s"
@@ -6161,6 +6178,10 @@ msgstr "Esiprotsessori versioon: %s"
 
 msgid "Full Range RGB"
 msgstr ""
+
+#, fuzzy
+msgid "Full factory reset"
+msgstr "Algseadistus"
 
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if the content aspect ratio does not match the screen ratio)
 msgid "Full screen"
@@ -6601,6 +6622,9 @@ msgstr "Ajaloo tagasivaade"
 msgid "History next"
 msgstr "Ajaloo edasivaade"
 
+msgid "Hold First Frame"
+msgstr ""
+
 msgid "Hold screen"
 msgstr "Hoia pilti"
 
@@ -6680,9 +6704,6 @@ msgid "Hotkey zap"
 msgstr "Kiirnupu vahetus"
 
 msgid "Hotplug"
-msgstr ""
-
-msgid "Hour"
 msgstr ""
 
 msgid "Hourly"
@@ -6867,6 +6888,9 @@ msgstr ""
 msgid "Image: "
 msgstr "Tarkvara: "
 
+msgid "Immediately restart selected devices."
+msgstr ""
+
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr ""
 
@@ -6957,9 +6981,8 @@ msgstr "Indoneesia"
 msgid "Indonesian"
 msgstr "Indoneesia"
 
-#, fuzzy
 msgid "Inetd Recovery"
-msgstr "Kohene salvestus"
+msgstr ""
 
 #, fuzzy
 msgid "Inetd recovery"
@@ -7115,6 +7138,9 @@ msgstr "Ainult sisemine kõvaketas"
 #, fuzzy
 msgid "Internet"
 msgstr "Sisemine"
+
+msgid "Internet (ntp)"
+msgstr ""
 
 msgid "Interval between keys when repeating:"
 msgstr "Võtme kordamise vahemik:"
@@ -7291,7 +7317,7 @@ msgstr "LAN ühendus"
 
 #, fuzzy
 msgid "LCD Setup"
-msgstr "Ekraanigraafika 3D seadistus"
+msgstr "Seadistamine"
 
 #, fuzzy
 msgid "LCD scroll speed"
@@ -7307,7 +7333,7 @@ msgstr "Tavaline"
 
 #, fuzzy
 msgid "LED Setup"
-msgstr "Ekraanigraafika 3D seadistus"
+msgstr "Seadistamine"
 
 #, fuzzy
 msgid "LED Standby"
@@ -7520,9 +7546,8 @@ msgstr ""
 msgid "Load"
 msgstr "Laadi"
 
-#, fuzzy
 msgid "Load EPG Cache"
-msgstr "Laadi"
+msgstr ""
 
 msgid "Load only specific days in EPG"
 msgstr ""
@@ -7741,10 +7766,14 @@ msgstr ""
 msgid "Manufacturer"
 msgstr "Tootja"
 
+#, fuzzy, python-format
 msgid ""
 "Manufacturer reset in progress\n"
-"Please wait until enigma2 restarts"
+"Please wait until your %s %s restarts"
 msgstr ""
+"Toimub automatiseeritud uuendamine\n"
+"Oota vastuvõtja taaskäivitamist\n"
+"Selleks võib kuluda mõni minut"
 
 msgid "Mara M9"
 msgstr ""
@@ -7989,7 +8018,7 @@ msgstr "Liiguta PiP-pilti"
 
 #, fuzzy
 msgid "Move down a line"
-msgstr "liigu viimasele reale"
+msgstr "Liigu nimekirjas alla"
 
 #, fuzzy
 msgid "Move down a screen"
@@ -8034,7 +8063,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Move to first line / screen"
-msgstr "liigu esimesele reale"
+msgstr "liigu järgmisele reale"
 
 #, fuzzy
 msgid "Move to last line / screen"
@@ -8061,11 +8090,10 @@ msgstr "liigu eelmisele reale"
 
 #, fuzzy
 msgid "Move up a line"
-msgstr "liigu esimesele reale"
+msgstr "Liigutatud indeksi asendisse"
 
-#, fuzzy
 msgid "Move up a screen"
-msgstr "liigu eelmisele reale"
+msgstr ""
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -8242,12 +8270,8 @@ msgstr "EI"
 msgid "NOW"
 msgstr "PRAEGU"
 
-msgid "NTP"
+msgid "NTP Hostname"
 msgstr ""
-
-#, fuzzy
-msgid "NTP server"
-msgstr "Nimeserver"
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -8351,6 +8375,10 @@ msgstr "Võrgu abimees"
 
 msgid "Network:"
 msgstr "Võrk:"
+
+#, fuzzy
+msgid "Never"
+msgstr "mitte kunagi"
 
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr "Ära dekrüpti sisu salvestamise ajal. See valik alistab üksiku taimeri seadistused globaalselt ja selle lubamisel salvestised talletatakse krüpteeritult. Lahtikrüptida saad hiljem (offlain dekodeerimine). Vaikimisi: välja lülitatud."
@@ -8784,9 +8812,6 @@ msgstr "Filmi lõpus (nagu menüü)"
 msgid "On valid ONIDs, ignore frequency sub network part"
 msgstr "Kehtivate ONID puhul eira sageduse alavõrgu osa"
 
-msgid "Once per day"
-msgstr ""
-
 msgid "One"
 msgstr "Üks"
 
@@ -9024,14 +9049,15 @@ msgid "Parent directory"
 msgstr "Ülemkataloog"
 
 #, fuzzy
+msgid "Parental Control"
+msgstr "Lapselukk"
+
+#, fuzzy
 msgid "Parental Control Setup"
 msgstr "Lapseluku seaded"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
-
-msgid "Parental control"
-msgstr "Lapselukk"
 
 msgid "Parental control services editor"
 msgstr "Lapseluku kanali muutmine"
@@ -9435,13 +9461,8 @@ msgstr "Oota, testin võrku."
 msgid "Please wait while your network is restarting..."
 msgstr "Oota kuni võrk taaskäivitub."
 
-msgid "Please wait, restarting cardserver."
-msgstr "Oota, kaardiserver taaskäivitub."
-
-msgid "Please wait, restarting softcam and cardserver."
-msgstr "Oota, softcam ja kaardiserver taaskäivituvad."
-
-msgid "Please wait, restarting softcam."
+#, fuzzy, python-format
+msgid "Please wait, restarting %s."
 msgstr "Oota, softcam taaskäivitus."
 
 msgid "Please wait..."
@@ -9556,9 +9577,8 @@ msgstr "Ooterežiimis lülita välja"
 msgid "Power On Display"
 msgstr "Sisselülitus näidikul"
 
-#, fuzzy
 msgid "Power Timers"
-msgstr "Näita kanalinimekirja"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Toitehaldus. Uuri lähemalt vastuvõtja käsiraamatust."
@@ -10030,12 +10050,6 @@ msgstr "Tagasi eelmise teenuse juurde"
 msgid "Receiver or driver does not support FCC"
 msgstr ""
 
-msgid "Receiver reads the stored EPG data every (hours)."
-msgstr ""
-
-msgid "Receiver stores the EPG data every (hours)."
-msgstr ""
-
 msgid "Reception settings"
 msgstr "Vastuvõtu seaded"
 
@@ -10092,7 +10106,7 @@ msgstr "Salvestuse seadistus"
 
 #, fuzzy
 msgid "Recovery Mode"
-msgstr "[liigutamine]"
+msgstr "Kasutaja režiim"
 
 msgid "Red"
 msgstr "Punane"
@@ -10188,11 +10202,46 @@ msgstr "Kustuta kirje nimeserverist"
 msgid "Remove all alternatives"
 msgstr "Kustuta kõik asenduskanalid"
 
+msgid "Remove all bouquet/tuning data"
+msgstr ""
+
+#, fuzzy
+msgid "Remove all keymap data"
+msgstr "Kustuta märk"
+
 msgid "Remove all logfiles"
 msgstr "Eemalda kõik logifailid"
 
+#, fuzzy
+msgid "Remove all network data"
+msgstr "Kustuta kõik uus kanal-tunnused"
+
 msgid "Remove all new found flags"
 msgstr "Kustuta kõik uus kanal-tunnused"
+
+#, fuzzy
+msgid "Remove all other data"
+msgstr "Kustuta kõik asenduskanalid"
+
+#, fuzzy
+msgid "Remove all plugin setting data"
+msgstr "Eemalda laiendusi"
+
+#, fuzzy
+msgid "Remove all resume point data"
+msgstr "Kustuta kõik uus kanal-tunnused"
+
+#, fuzzy
+msgid "Remove all settings data"
+msgstr "Salvesta asetused ja EPG andmed"
+
+#, fuzzy
+msgid "Remove all skin data"
+msgstr "Kustuta kõik uus kanal-tunnused"
+
+#, fuzzy
+msgid "Remove all timer data"
+msgstr "Kustuta kõik asenduskanalid"
 
 msgid "Remove bookmark"
 msgstr "Kustuta järjehoidja"
@@ -10348,6 +10397,9 @@ msgstr "Nulli püsiv PIN kood"
 
 msgid "Reset playback position"
 msgstr "Nulli taasesituse algpunkt"
+
+msgid "Reset the selected devices when the GREEN button is pressed."
+msgstr ""
 
 msgid "Reset video enhancement settings to system defaults?"
 msgstr "Kas taastada pildiparanduste vaikeväärtused?"
@@ -10654,7 +10706,7 @@ msgstr "L"
 
 #, fuzzy
 msgid "SatPI setup"
-msgstr "Softcami seadistamine"
+msgstr "PiP seaded"
 
 msgid "Satellite"
 msgstr "Satelliit"
@@ -10695,7 +10747,7 @@ msgstr "Salvesta ja välju"
 
 #, fuzzy
 msgid "Save EPG Cache"
-msgstr "Salvesta asetused ja EPG andmed"
+msgstr "Salvesta muutused"
 
 #, fuzzy
 msgid "Save EPG data"
@@ -10932,6 +10984,36 @@ msgstr "Vali 'A' või 'B', kui antennisüsteem seda nõuab, muudel juhtudel vali
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Vali 'Unicable', kui see tuuner kasutab unicable seadet. Kõigil ülejäänud juhtudel vali 'FBC automaatne'."
 
+msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
+msgstr ""
+
+msgid "Select 'Yes' to remove all main settings configuration data. Selecting this option will set all Enigma2 settings back to their default values.  This will also cause Enigma2 to run the Welcome Wizard on restart."
+msgstr ""
+
+msgid "Select 'Yes' to remove all media player resume data. Selecting this option will remove the data used to allow playback of media files to resume from the position where playback was last stopped. Playback position of recordings is not affected."
+msgstr ""
+
+msgid "Select 'Yes' to remove all network data. Selecting this option will remove all network data including automounts and network connection data including connection accounts and passwords. This could cause some Enigma2 functions to fail if they are configured to use these network resources."
+msgstr ""
+
+msgid "Select 'Yes' to remove all other files and directories not covered by the options above."
+msgstr ""
+
+msgid "Select 'Yes' to remove all plugin configuration data. Selecting this option will remove all plugin configuration data that is stored in the Enigma2 configuration folder. This will cause all affected plugins to return to their default settings. This could cause some plugins to not function until configured."
+msgstr ""
+
+msgid "Select 'Yes' to remove all settings, tuning data, timers, resume pointers etc. Selecting this option will restore the configuration to the initial settings before any configuration settings were applied. This is the most reliable form of Factory Reset."
+msgstr ""
+
+msgid "Select 'Yes' to remove all timer configuration data. Selecting this option will clear all timers, autotimers and power timers."
+msgstr ""
+
+msgid "Select 'Yes' to remove all tuning data. Selecting this option will remove all tuning and bouquet data and will make timers non functional until the receiver is retuned."
+msgstr ""
+
+msgid "Select 'Yes' to remove all user customisations of skin data. Selecting this option will remove all user based skin customisations. All affected skins will return to their standard settings. This will also clear any customied boot logos and backdrops."
+msgstr ""
+
 msgid "Select 'Yes' when you want to configure this tuner for ATSC"
 msgstr "ATSC seadistamiseks vali 'Jah'."
 
@@ -10981,9 +11063,6 @@ msgstr "Valides 'jah', saadetakse DiSEqC käsk vahetades ühelt satelliidilt tei
 msgid "Select CAId"
 msgstr "Vali CAId"
 
-msgid "Select Card Server"
-msgstr "Vali kaardiserver"
-
 msgid "Select Channel"
 msgstr "Vali kanal"
 
@@ -10993,17 +11072,21 @@ msgstr "Vali kiire DiSEqC, kui antennisüsteem seda toetab. Kui pole kindel, val
 msgid "Select HDD"
 msgstr "Vali kõvaketas"
 
-msgid "Select Softcam"
-msgstr "Vali softcam"
-
 msgid "Select a bouquet"
 msgstr "Vali lemmiknimekiri"
+
+msgid "Select a cardserver from the available list."
+msgstr ""
 
 msgid "Select a movie"
 msgstr "Vali salvestis"
 
 msgid "Select a network adapter"
 msgstr "Vali võrgukaart"
+
+#, fuzzy
+msgid "Select a softcam from the available list."
+msgstr "Vali asukohamaa. Kui pole saadaval, vali 'kõik'."
 
 msgid "Select a tuner"
 msgstr "Vali tuuner"
@@ -11032,6 +11115,10 @@ msgstr "Varukoopia asukoht"
 
 msgid "Select between entering an IP address or a domain."
 msgstr ""
+
+#, fuzzy
+msgid "Select cardserver"
+msgstr "Vali kaardiserver"
 
 msgid "Select channel"
 msgstr "Vali kanal"
@@ -11070,6 +11157,9 @@ msgstr "Vali antenni satelliitide vahel liikumise kiirus."
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr "Vali antenni seadistus, nt. üksik LNB, DiSEqC lüliti, ajam jne."
 
+msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
+msgstr ""
+
 msgid "Select input device"
 msgstr "Vali sisendseade"
 
@@ -11106,6 +11196,10 @@ msgstr "Vali kanal lisamiseks"
 
 msgid "Select slot"
 msgstr "Vali pesa"
+
+#, fuzzy
+msgid "Select softcam"
+msgstr "Vali softcam"
 
 msgid "Select sort method:"
 msgstr "Vali järjestusviis:"
@@ -11551,9 +11645,6 @@ msgstr "Seadistusmenüü"
 
 msgid "Setup mode"
 msgstr "Seadistamine"
-
-msgid "Setup network time synchronization interval."
-msgstr ""
 
 msgid "Setup your positioner"
 msgstr "Mootori häälestamine"
@@ -12062,7 +12153,7 @@ msgstr "Seaded"
 
 #, fuzzy
 msgid "Skin Setup"
-msgstr "Seaded"
+msgstr "Seadistamine"
 
 msgid "SkinSelector: Restart GUI"
 msgstr ""
@@ -12138,6 +12229,10 @@ msgstr "Sloveeni"
 msgid "Slow"
 msgstr "Aeglane"
 
+#, fuzzy
+msgid "Slow Motion"
+msgstr "Aeglustuskiirused"
+
 msgid "Slow motion speeds"
 msgstr "Aeglustuskiirused"
 
@@ -12171,18 +12266,18 @@ msgstr "Ühiskond/Poliitika/Majandus"
 msgid "SocketMMI"
 msgstr ""
 
-#, fuzzy
 msgid "Soft multiboot: "
-msgstr "Mitu satelliiti"
+msgstr ""
 
 #, fuzzy
 msgid "Softcam"
 msgstr "Softcami seadistamine"
 
-msgid "Softcam Setup"
-msgstr "Softcami seadistamine"
+#, fuzzy
+msgid "Softcam Actions"
+msgstr "Otsingu valikud"
 
-msgid "Softcam setup"
+msgid "Softcam Setup"
 msgstr "Softcami seadistamine"
 
 msgid "Software"
@@ -12835,17 +12930,8 @@ msgstr "Sümbolikiirus ja FEC"
 msgid "Symbol rate:"
 msgstr "Sümbolikiirus:"
 
-msgid "Sync NTP every (minutes)"
-msgstr ""
-
 msgid "Sync failure moving back to origin !"
 msgstr "Sünkro viga, tagasi originaali juurde!"
-
-msgid "Sync time using"
-msgstr ""
-
-msgid "Synchronize system time using transponder or internet."
-msgstr ""
 
 msgid "Syrian Arab Republic"
 msgstr "Süüria Araabia Vabariik"
@@ -13081,6 +13167,10 @@ msgstr "DVD standard ei toeta H.264 (HDTV) video voogesitust. Kas soovite luua e
 msgid "The MovieCut plugin is not installed."
 msgstr "See laiendus pole paigaldatud."
 
+#, fuzzy
+msgid "The PIN code entered is incorrect."
+msgstr "Sisestatud PIN koodid on erinevad."
+
 msgid "The PIN code has been changed successfully."
 msgstr "PIN kood on muudetud."
 
@@ -13131,6 +13221,9 @@ msgid "The frame rate of the recording. Ideally, this will match the frame rate 
 msgstr ""
 
 msgid "The height of the picture. The input will be scaled to match this value."
+msgstr ""
+
+msgid "The hostname or the IP address of the NTP server to synchronise the time with."
 msgstr ""
 
 msgid ""
@@ -13211,12 +13304,11 @@ msgstr ""
 "Softwaremanagement laiendus ei ole paigaldatud! \n"
 "Paigalda see."
 
-msgid "The speed of the fan when receiver is in normal use."
+msgid "The speed of the fan when your %s %s is in normal use."
 msgstr ""
 
-#, fuzzy
-msgid "The speed of the fan when receiver is in standby mode."
-msgstr "Määra lõpuaeg, et vältida väljalülitamise taimerit, kui vastuvõtja on ooterežiimis"
+msgid "The speed of the fan when your %s %s is in standby mode."
+msgstr ""
 
 #, python-format
 msgid "The status of the current image could not be checked because %s can not be reached."
@@ -13232,18 +13324,20 @@ msgstr "Taimerite fail (timers.xml) on katki ja seda ei saa laadida."
 msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr "Vastuvõtja kasutajaliides taaskäivitub."
 
-msgid "The user interface of your receiver is restarting"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting"
 msgstr "Vastuvõtja kasutajaliides taaskäivitub."
 
+#, fuzzy, python-format
 msgid ""
-"The user interface of your receiver is restarting\n"
+"The user interface of your %s %s is restarting\n"
 "due to an error in mytest.py"
 msgstr ""
 "Vastuvõtja kasutajaliides taaskäivitub\n"
 " vea tõttu 'mytest.py' failis"
 
-#, fuzzy
-msgid "The user interface of your receiver is restarting in debug mode"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting in debug mode"
 msgstr "Vastuvõtja kasutajaliides taaskäivitub."
 
 msgid "The width of the picture. The input will be scaled to match this value."
@@ -13312,6 +13406,12 @@ msgid "This field allows you to search an additional symbol rate up to %s."
 msgstr "See väli võimaldab otsida täiendavalt sümbolikiirusi kuni %s."
 
 msgid ""
+"This image is intended for developers and testers.\n"
+"No support will be provided!\n"
+"Do you understand this?"
+msgstr ""
+
+msgid ""
 "This info is for developers only.\n"
 "For normal users it is not relevant.\n"
 "Please don't panic if you see values displayed looking suspicious!"
@@ -13326,7 +13426,7 @@ msgstr ""
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr "Selles järjekorras saadetakse DiSEqC käsud antennisüsteemile. See järjekord peab vastama täpselt järjekorrale, millega füüsilised seadmed on antennikaabli abil ühendatud (alates vastuvõtjast)."
 
-msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since the receiver was last booted."
+msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since your %s %s was last booted."
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -13463,6 +13563,10 @@ msgstr "See valik lubab näidiku välja lülitada."
 #, fuzzy
 msgid "This option allows you to switch audio to BT speakers."
 msgstr "See valikuvõimalus seadistab, et saad sättida automaatse helitugevuse."
+
+#, fuzzy
+msgid "This option allows you to use video sync mode."
+msgstr "Selle valikuvõimaluse abli saad lubada 3D surround heli."
 
 #, fuzzy
 msgid "This option allows you to view the old and new settings side by side."
@@ -13619,6 +13723,9 @@ msgstr "Ajaskaala"
 #, fuzzy
 msgid "Time style"
 msgstr "Ajaskaala"
+
+msgid "Time synchronization method"
+msgstr ""
 
 msgid "Time to execute command or script"
 msgstr ""
@@ -13857,7 +13964,7 @@ msgid "Transponder"
 msgstr "Transponder"
 
 #, fuzzy
-msgid "Transponder time"
+msgid "Transponder Time"
 msgstr "Transponder"
 
 msgid "Transport Stream Type"
@@ -14059,9 +14166,10 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
+#, fuzzy, python-format
 msgid ""
 "Unattended update in progress\n"
-"Please wait until your receiver reboots\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Toimub automatiseeritud uuendamine\n"
@@ -14142,6 +14250,10 @@ msgid "Unsupported"
 msgstr "Pole toetatud"
 
 #, fuzzy
+msgid "Until standby/restart"
+msgstr "kuni ooterežiimini/taaskäivitamiseni"
+
+#, fuzzy
 msgid "Unzipping Image"
 msgstr "Tarkvara alla laadimas"
 
@@ -14173,7 +14285,8 @@ msgid_plural "Update completed, %d packages were installed."
 msgstr[0] "Uuendamine tehtud, paigaldati %d pakett."
 msgstr[1] "Uuendamine tehtud, paigaldati %d paketti."
 
-msgid "Update completed. Do you want to reboot your receiver?"
+#, fuzzy, python-format
+msgid "Update completed. Do you want to reboot your %s %s?"
 msgstr "Uuendamine on tehtud. Kas taaskäivitad vastuvõtja?"
 
 #, fuzzy
@@ -14493,6 +14606,10 @@ msgstr "Video väljund"
 
 msgid "Video setup"
 msgstr "Video seaded"
+
+#, fuzzy
+msgid "Video sync mode"
+msgstr "Videorežiim"
 
 msgid "Video wizard"
 msgstr "Video juhend"
@@ -14991,21 +15108,6 @@ msgstr "Määrates 'jah', näidatakse filmilistis salvestuse kestust (laadimine 
 msgid "When enabled, the length of each recording will be shown in the movielist (this might cause some additional loading time)."
 msgstr "Määrates 'jah', näidatakse filmilistis salvestuse kestust (laadimine võib kesta veidi kauem)."
 
-msgid "When enabled, the receiver will automatically use the audio track which you selected before."
-msgstr "Määrates 'jah', kasutab vastuvõtja automaatselt varem valitud heliriba."
-
-msgid "When enabled, the receiver will automatically use the subtitles which you selected before."
-msgstr "Määrates 'jah', kasutatakse automaatselt varem valitud subtiitreid."
-
-msgid "When enabled, the receiver will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
-msgstr "Määrates 'jah', ei jälgi vastuvõtja enam võimalikke muudatusi transponderil. Kasuta seda ainult juhul, kui oled täiesti kindel, et tead, mida teed."
-
-msgid "When enabled, the receiver will select an AC3 track (when available)."
-msgstr "Määrates 'jah', kasutab vastuvõtja (võimaluse korral) AC3 heli."
-
-msgid "When enabled, the receiver will select an AC3+ track (when available)."
-msgstr "Määrates 'jah', valib vastuvõtja AC3­­+ helirea (võimaluse korral)"
-
 msgid "When enabled, this setting has more weight than 'Preferred tuner for recordings'."
 msgstr "Määrates 'jah' on see seadistus eelistatum kui 'Eelistatud tuuner salvestamiseks'."
 
@@ -15023,6 +15125,26 @@ msgstr ""
 
 msgid "When enabled, you will see the available revision on github"
 msgstr ""
+
+#, fuzzy
+msgid "When enabled, your %s %s will automatically use the audio track which you selected before."
+msgstr "Määrates 'jah', kasutab vastuvõtja automaatselt varem valitud heliriba."
+
+#, fuzzy
+msgid "When enabled, your %s %s will automatically use the subtitles which you selected before."
+msgstr "Määrates 'jah', kasutatakse automaatselt varem valitud subtiitreid."
+
+#, fuzzy
+msgid "When enabled, your %s %s will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
+msgstr "Määrates 'jah', ei jälgi vastuvõtja enam võimalikke muudatusi transponderil. Kasuta seda ainult juhul, kui oled täiesti kindel, et tead, mida teed."
+
+#, fuzzy
+msgid "When enabled, your %s %s will select an AC3 track (when available)."
+msgstr "Määrates 'jah', kasutab vastuvõtja (võimaluse korral) AC3 heli."
+
+#, fuzzy
+msgid "When enabled, your %s %s will select an AC3+ track (when available)."
+msgstr "Määrates 'jah', valib vastuvõtja AC3­­+ helirea (võimaluse korral)"
 
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "Määrates 'jah', vastuvõtja tuvastab tegevuse VCR SCART sisendis."
@@ -15325,6 +15447,36 @@ msgstr ""
 msgid "Your %s %s (kernel %s) does not have an internet connection"
 msgstr "Vastuvõtjal puudub internetiühendus"
 
+#, python-format
+msgid "Your %s %s goes to WOL"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Your %s %s is rebooting"
+msgstr "Vastuvõtja taaskäivitub"
+
+#, python-format
+msgid "Your %s %s is rebooting into android mode"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting into recovery mode"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Your %s %s is shutting down"
+msgstr "Vastuvõtja lülitub välja"
+
+msgid "Your %s %s reads the stored EPG data every (hours)."
+msgstr ""
+
+msgid "Your %s %s stores the EPG data every (hours)."
+msgstr ""
+
+#, python-format
+msgid "Your %s %s?"
+msgstr ""
+
 #, fuzzy
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"
 msgstr "Sinu PIN kood on 0000. See on vaikimisi PIN kood ja eemaldab lapseluku.\n"
@@ -15335,19 +15487,10 @@ msgstr "Kogu valik ei mahu ühekihilisele plaadile, vaja on tühja kahekihilist 
 msgid "Your current collection will get lost!"
 msgstr "Praegune valik kustutatakse!"
 
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
-"Your front panel will be updated\n"
-"This may take a few minutes"
-msgstr ""
-"Esiprotsessorit uuendatakse\n"
-"Oota vastuvõtja taaskäivitumist\n"
-"See võib võtta mõne minuti"
-
-#, fuzzy
-msgid ""
-"Your front processor will be updated\n"
-"Please wait until your receiver reboots\n"
+"Your frontprocessor will be updated\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 "Esiprotsessorit uuendatakse\n"
@@ -15380,10 +15523,6 @@ msgstr "See vastuvõtja oskab kasutada 22KHz-helitugevust. Enamat infot otsi vas
 msgid "Your receiver does not have an internet connection"
 msgstr "Vastuvõtjal puudub internetiühendus"
 
-#, fuzzy
-msgid "Your receiver goes to WOL"
-msgstr "Vastuvõtja taaskäivitub"
-
 msgid "Your receiver is not connected to the internet, please check your network settings and try again."
 msgstr ""
 
@@ -15411,21 +15550,8 @@ msgstr ""
 "\n"
 "Jätkamiseks vajuta OK."
 
-msgid "Your receiver is rebooting"
-msgstr "Vastuvõtja taaskäivitub"
-
-#, fuzzy
-msgid "Your receiver is rebooting into android mode"
-msgstr "Vastuvõtja taaskäivitub"
-
-#, fuzzy
-msgid "Your receiver is rebooting into recovery mode"
-msgstr "Vastuvõtja taaskäivitub"
-
-msgid "Your receiver is shutting down"
-msgstr "Vastuvõtja lülitub välja"
-
-msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
+#, fuzzy, python-format
+msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your %s %s."
 msgstr "Vastuvõtja võib olla nüüd kasutuskõlbmatu. Uuri juhendit täiendava abi leidmiseks enne vastuvõtja taaskäivitamist."
 
 #, fuzzy, python-format
@@ -15634,6 +15760,10 @@ msgstr "alternatiivne"
 msgid "always"
 msgstr "alati"
 
+#, fuzzy
+msgid "and"
+msgstr "Sagedusala"
+
 msgid "and never ask in this session again"
 msgstr "ja selle seansi jooksul enam ei küsita"
 
@@ -15705,9 +15835,6 @@ msgstr "must"
 msgid "black & white"
 msgstr "must-valge"
 
-msgid "blacklist"
-msgstr "keelatud"
-
 msgid "blue"
 msgstr "sinine"
 
@@ -15729,6 +15856,10 @@ msgstr ""
 #, fuzzy
 msgid "cancel"
 msgstr "Tühista"
+
+#, fuzzy
+msgid "cardserver"
+msgstr "Taaskäivita kaardiserver"
 
 msgid "cartoon/puppets"
 msgstr "joonis/nukufilm"
@@ -16646,6 +16777,10 @@ msgid "social/spiritual science"
 msgstr "ühiskonna/hingeteadus"
 
 #, fuzzy
+msgid "softcam"
+msgstr "Taaskäivita softcam"
+
+#, fuzzy
 msgid "special (general)"
 msgstr "sport (üldiselt)"
 
@@ -16791,9 +16926,6 @@ msgstr "avaldamata"
 
 msgid "untestable"
 msgstr "ebastabiilne"
-
-msgid "until standby/restart"
-msgstr "kuni ooterežiimini/taaskäivitamiseni"
 
 msgid "use best / controlled by HDMI"
 msgstr ""

@@ -33,13 +33,6 @@ enigma.eTimer = eBaseImpl.eTimer
 enigma.eSocketNotifier = eBaseImpl.eSocketNotifier
 enigma.eConsoleAppContainer = eConsoleImpl.eConsoleAppContainer
 
-if getVisionVersion().startswith("10") and not fileExists ("/var/tmp/ntpv4.local") and platform != "dm4kgen":
-	from Components.Console import Console
-	print("[mytest] Try load all network interfaces.")
-	Console = Console()
-	Console.ePopen('/etc/init.d/networking restart ; /etc/init.d/samba.sh restart ; mount -a -t nfs,smbfs,cifs,ncpfs')
-	print("[mytest] All network interfaces loaded.")
-
 from traceback import print_exc
 
 if getHaveMultiLib() == "True":
@@ -83,9 +76,6 @@ InitFallbackFiles()
 profile("config.misc")
 config.misc.radiopic = ConfigText(default = resolveFilename(SCOPE_CURRENT_SKIN, "radio.mvi"))
 config.misc.blackradiopic = ConfigText(default = resolveFilename(SCOPE_CURRENT_SKIN, "black.mvi"))
-config.misc.useTransponderTime = ConfigYesNo(default=False)
-config.misc.SyncTimeUsing = ConfigSelection(default = "1", choices = [("0", _("Transponder time")), ("1", _("NTP"))])
-config.misc.NTPserver = ConfigText(default = 'pool.ntp.org', fixed_size=False)
 config.misc.startCounter = ConfigInteger(default=0) # number of e2 starts...
 config.misc.standbyCounter = NoSave(ConfigInteger(default=0)) # number of standby
 config.misc.DeepStandby = NoSave(ConfigYesNo(default=False)) # detect deepstandby
@@ -112,26 +102,6 @@ def setEPGCachePath(configElement):
 
 #config.misc.standbyCounter.addNotifier(standbyCountChanged, initial_call = False)
 ####################################################
-
-def useSyncUsingChanged(configelement):
-	if configelement.value == "0":
-		print("[mytest] Time By: Transponder")
-		enigma.eDVBLocalTimeHandler.getInstance().setUseDVBTime(True)
-		enigma.eEPGCache.getInstance().timeUpdated()
-	else:
-		print("[mytest] Time By: NTP")
-		enigma.eDVBLocalTimeHandler.getInstance().setUseDVBTime(False)
-		enigma.eEPGCache.getInstance().timeUpdated()
-config.misc.SyncTimeUsing.addNotifier(useSyncUsingChanged)
-
-def NTPserverChanged(configelement):
-	open("/etc/default/ntpdate", "w").write('NTPSERVERS="' + configelement.value + '"\n')
-	os.chmod("/etc/default/ntpdate", 0755)
-	from Components.Console import Console
-	Console = Console()
-	Console.ePopen('/usr/bin/ntpdate-sync')
-config.misc.NTPserver.addNotifier(NTPserverChanged, immediate_feedback = False)
-config.misc.NTPserver.callNotifiersOnSaveAndCancel = True
 
 profile("Twisted")
 try:
@@ -416,7 +386,7 @@ class PowerKey:
 		globalActionMap.actions["power_down"] = lambda *args: None
 		globalActionMap.actions["power_up"] = self.powerup
 		globalActionMap.actions["power_long"] = self.powerlong
-		globalActionMap.actions["deepstandby"] = self.shutdown # frontpanel long power button press
+		globalActionMap.actions["deepstandby"] = self.shutdown # front panel long power button press
 		globalActionMap.actions["discrete_off"] = self.standby
 
 	def shutdown(self):
@@ -587,7 +557,7 @@ def runScreenTest():
 				wptime = startTime[0] - 120 # GigaBlue already starts 2 min. before wakeup time
 			else:
 				wptime = startTime[0] - 240
-		if not config.misc.SyncTimeUsing.value == "0" or brand == "gigablue":
+		if brand == "gigablue":
 			print("[mytest] dvb time sync disabled... so set RTC now to current linux time!", strftime("%Y/%m/%d %H:%M", localtime(nowTime)))
 			setRTCtime(nowTime)
 		print("[mytest] set wakeup time to", strftime("%Y/%m/%d %H:%M", localtime(wptime)))
@@ -652,10 +622,6 @@ Components.UsageConfig.InitUsageConfig()
 profile("TimeZones")
 import Components.Timezones
 Components.Timezones.InitTimeZones()
-
-profile("Init:NTPSync")
-import Components.NetworkTime
-Components.NetworkTime.AutoNTPSync()
 
 profile("keymapparser")
 import keymapparser

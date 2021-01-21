@@ -18,10 +18,13 @@ from Tools.Directories import mediafilesInUse
 from Tools import Notifications
 from time import time, localtime
 from GlobalActions import globalActionMap
-from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, quitMainloop, iRecordableService, getBoxType
+from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference, eStreamServer, quitMainloop, iRecordableService, getBoxType, getBoxBrand
 
 inStandby = None
 infoBarInstance = None
+
+brand = getBoxBrand()
+model = getBoxType()
 
 QUIT_SHUTDOWN = 1
 QUIT_REBOOT = 2
@@ -287,18 +290,18 @@ class QuitMainloopScreen(Screen):
 		Screen.__init__(self, session)
 		from Components.Label import Label
 		text = {
-			QUIT_SHUTDOWN: _("Your receiver is shutting down"),
-			QUIT_REBOOT: _("Your receiver is rebooting"),
-			QUIT_RESTART: _("The user interface of your receiver is restarting"),
-			QUIT_UPGRADE_FP: _("Your front processor will be updated\nPlease wait until your receiver reboots\nThis may take a few minutes"),
-			QUIT_ERROR_RESTART: _("The user interface of your receiver is restarting\ndue to an error in mytest.py"),
-			QUIT_DEBUG_RESTART: _("The user interface of your receiver is restarting in debug mode"),
-			QUIT_REBOOT_ANDROID: _("Your receiver is rebooting into android mode"),
-			QUIT_REBOOT_RECOVERY: _("Your receiver is rebooting into recovery mode"),
-			QUIT_UPGRADE_PROGRAM: _("Unattended update in progress\nPlease wait until your receiver reboots\nThis may take a few minutes"),
-			QUIT_MANUFACTURER_RESET: _("Manufacturer reset in progress\nPlease wait until enigma2 restarts"),
-			QUIT_UPGRADE_FPANEL: _("Your front panel will be updated\nThis may take a few minutes"),
-			QUIT_WOL: _("Your receiver goes to WOL")
+			QUIT_SHUTDOWN: _("Your %s %s is shutting down") % (brand, model),
+			QUIT_REBOOT: _("Your %s %s is rebooting") % (brand, model),
+			QUIT_RESTART: _("The user interface of your %s %s is restarting") % (brand, model),
+			QUIT_UPGRADE_FP: _("Your frontprocessor will be updated\nPlease wait until your %s %s reboots\nThis may take a few minutes") % (brand, model),
+			QUIT_ERROR_RESTART: _("The user interface of your %s %s is restarting\ndue to an error in mytest.py") % (brand, model),
+			QUIT_DEBUG_RESTART: _("The user interface of your %s %s is restarting in debug mode") % (brand, model),
+			QUIT_REBOOT_ANDROID: _("Your %s %s is rebooting into android mode") % (brand, model),
+			QUIT_REBOOT_RECOVERY: _("Your %s %s is rebooting into recovery mode") % (brand, model),
+			QUIT_UPGRADE_PROGRAM: _("Unattended update in progress\nPlease wait until your %s %s reboots\nThis may take a few minutes") % (brand, model),
+			QUIT_MANUFACTURER_RESET: _("Manufacturer reset in progress\nPlease wait until your %s %s restarts") % (brand, model),
+			QUIT_UPGRADE_FPANEL: _("Front panel your %s %s will be updated\nThis may take a few minutes") % (brand, model),
+			QUIT_WOL: _("Your %s %s goes to WOL") % (brand, model)
 		}.get(retvalue)
 		self["text"] = Label(text)
 

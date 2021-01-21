@@ -110,7 +110,7 @@ class VideoHardware:
 	elif chipsetstring == "meson-6":
 		modes["DVI"] = ["720p", "1080p", "1080i"]
 		widescreen_modes = {"720p", "1080p", "1080i"}
-	elif chipsetstring in ("meson-64", "s905d") or socfamily == "aml905d":
+	elif chipsetstring in ("meson-64", "s905d") or socfamily in ("aml905d", "meson64"):
 		modes["DVI"] = ["720p", "1080p", "2160p", "2160p30", "1080i"]
 		widescreen_modes = {"720p", "1080p", "1080i", "2160p", "2160p30"}
 	else:
@@ -216,11 +216,16 @@ class VideoHardware:
 	def readPreferredModes(self):
 		if config.av.edid_override.value == False:
 			try:
-				modes = open("/proc/stb/video/videomode_preferred").read()[:-1]
+				modes = open("/proc/stb/video/videomode_edid").read()[:-1]
 				self.modes_preferred = modes.split(' ')
+				print("[Videomode] VideoHardware reading edid modes: ", self.modes_preferred)
 			except IOError:
-				print("[Videomode] VideoHardware reading preferred modes failed, using all video modes")
-				self.modes_preferred = self.modes_available
+				try:
+					modes = open("/proc/stb/video/videomode_preferred").read()[:-1]
+					self.modes_preferred = modes.split(' ')
+				except IOError:
+					print("[Videomode] VideoHardware reading preferred modes failed, using all video modes")
+					self.modes_preferred = self.modes_available
 
 			if len(self.modes_preferred) <= 1:
 				self.modes_preferred = self.modes_available
@@ -442,11 +447,11 @@ class VideoHardware:
 				open("/sys/class/video/screen_mode", "w").write(arw)
 			except IOError:
 				pass
-		else:
-			try:
-				open("/proc/stb/video/aspect", "w").write(aspect)
-			except IOError:
-				pass
+
+		try:
+			open("/proc/stb/video/aspect", "w").write(aspect)
+		except IOError:
+			pass
 		try:
 			open("/proc/stb/video/policy", "w").write(policy)
 		except IOError:

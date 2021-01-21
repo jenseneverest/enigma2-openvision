@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-11 23:06+0330\n"
+"POT-Creation-Date: 2021-01-20 16:44+0330\n"
 "PO-Revision-Date: 2018-02-14 16:51+0330\n"
 "Last-Translator: Persian Prince <persianprince@pe4k.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -1095,9 +1095,9 @@ msgid ""
 "Press exit to close"
 msgstr ""
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s  (Default: %s)"
-msgstr "پیش فرض"
+msgstr ""
 
 #, python-format
 msgid "%s %s free disk space"
@@ -1438,6 +1438,10 @@ msgstr "<محل پیش فرض فیلم>"
 
 msgid "<Last timer location>"
 msgstr "<آخرین مکان زمان>"
+
+#, fuzzy
+msgid "<Press OK to perform action>"
+msgstr "دکمه OK را برای toggle انتخاب فشار دهید"
 
 msgid "<unknown>"
 msgstr "<نامشخص>"
@@ -1927,12 +1931,6 @@ msgstr ""
 msgid "Allow unsupported modes"
 msgstr ""
 
-msgid "Allows receiver to read the stored EPG data regularly."
-msgstr ""
-
-msgid "Allows receiver to store the EPG data regularly."
-msgstr ""
-
 msgid "Allows the TV remote to be used to control the receiver."
 msgstr ""
 
@@ -1954,6 +1952,12 @@ msgstr ""
 #, fuzzy
 msgid "Allows you to show images."
 msgstr "آیا میخواهید ایمیج را در %s دانلود کنید ؟"
+
+msgid "Allows your %s %s to read the stored EPG data regularly."
+msgstr ""
+
+msgid "Allows your %s %s to store the EPG data regularly."
+msgstr ""
 
 msgid "Alpha"
 msgstr "الفبا"
@@ -2003,7 +2007,7 @@ msgstr ""
 msgid "Always include ECM in recordings"
 msgstr ""
 
-msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your %s %s. Default: off."
 msgstr ""
 
 msgid "American Samoa"
@@ -2034,9 +2038,8 @@ msgstr ""
 msgid "Andorra"
 msgstr ""
 
-#, fuzzy
 msgid "Android Mode"
-msgstr "حالت 3 بعدی"
+msgstr ""
 
 msgid "Angola"
 msgstr ""
@@ -2606,11 +2609,19 @@ msgstr "میزان ارسال"
 msgid "Bitrate:"
 msgstr "میزان ارسال"
 
+#, fuzzy
+msgid "Black Screen"
+msgstr "صفحه نمایش سیاه"
+
 msgid "Black screen"
 msgstr "صفحه نمایش سیاه"
 
 msgid "Black screen till locked"
 msgstr "صفحه نمایش سیاه تا زمانی که قفل شود"
+
+#, fuzzy
+msgid "Blacklist"
+msgstr "لیست سیاه"
 
 msgid "Blinking REC"
 msgstr ""
@@ -3147,10 +3158,10 @@ msgstr ""
 msgid "Choose the location for crash and debug logs folder."
 msgstr ""
 
-msgid "Choose the location where the EPG data will be stored when receiver is shut down. The location must be available at boot time."
+msgid "Choose the location where the EPG data will be stored when your %s %s is shut down. The location must be available at boot time."
 msgstr ""
 
-msgid "Choose the name of the file that holds the EPG data when receiver is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when your %s %s is shut down. This can be handy to differentiate between several boxes."
 msgstr ""
 
 msgid "Choose whether AAC sound tracks should be transcoded."
@@ -3701,7 +3712,7 @@ msgstr ""
 msgid "Configure the video output mode (or resolution)."
 msgstr ""
 
-msgid "Configure the way in which the receiver changes channels."
+msgid "Configure the way in which your %s %s changes channels."
 msgstr ""
 
 msgid "Configure the width of the TrueType font letters used for teletext."
@@ -3754,11 +3765,6 @@ msgstr ""
 
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr ""
-
-#
-#, fuzzy
-msgid "Configure your NTP server."
-msgstr "پیکربندی nameservers"
 
 #
 msgid "Configure your internal LAN"
@@ -3951,9 +3957,8 @@ msgstr "کرواسی"
 msgid "Cron Manager"
 msgstr ""
 
-#, fuzzy
 msgid "Cron Timers"
-msgstr "زمان پایان"
+msgstr ""
 
 #, fuzzy
 msgid "Cron manager"
@@ -4465,7 +4470,7 @@ msgstr "حذف"
 
 #, fuzzy
 msgid "Delete EPG Cache"
-msgstr "حذف"
+msgstr "حذف ناموفق"
 
 #, fuzzy
 msgid "Delete Image"
@@ -4724,6 +4729,9 @@ msgstr "نمایش و رابط کاربری"
 msgid "Display message before playing next movie"
 msgstr ""
 
+msgid "Display oscam information."
+msgstr ""
+
 msgid "Display selection list as a selection menu"
 msgstr ""
 
@@ -4909,11 +4917,12 @@ msgid "Do you want to update the package:\n"
 msgstr "آیا میخواهید بسته به روز رسانی شود:\n"
 
 #, fuzzy, python-format
-msgid "Do you want to update your receiver to %s?"
+msgid "Do you want to update to %s"
 msgstr "آیا میخواهید ایمیج را در %s دانلود کنید ؟"
 
-msgid "Do you want to update your receiver?"
-msgstr ""
+#, fuzzy, python-format
+msgid "Do you want to update your %s %s?"
+msgstr "آیا میخواهید ایمیج را در %s دانلود کنید ؟"
 
 msgid "Documentary"
 msgstr ""
@@ -4932,6 +4941,10 @@ msgstr ""
 
 msgid "Don't ask again!"
 msgstr ""
+
+#, fuzzy
+msgid "Don't restart"
+msgstr "خاموشی موقت / راه اندازی مجدد"
 
 msgid "Don't save and stop timeshift"
 msgstr ""
@@ -4957,9 +4970,8 @@ msgstr ""
 msgid "Don't zap and remove timer"
 msgstr ""
 
-#, fuzzy
 msgid "Donate: "
-msgstr "میزان ارسال"
+msgstr ""
 
 msgid "Done"
 msgstr ""
@@ -5859,12 +5871,6 @@ msgstr "بازگشت به حالت کارخانه ای"
 msgid "Factory release: "
 msgstr "بازگشت به حالت کارخانه ای"
 
-msgid ""
-"Factory reset will restore your receiver to its default configuration. All user data including system settings, tuner configuration, bouquets, services and plugins will be DELETED. Recordings and other files stored on HDD and USB media will remain intact. After completion, the system will restart automatically!\n"
-"\n"
-"Do you really want to proceed?"
-msgstr ""
-
 msgid "Fade the infobar when hiding"
 msgstr ""
 
@@ -6157,12 +6163,22 @@ msgstr "از:"
 msgid "Front Panel Display"
 msgstr ""
 
+#, python-format
+msgid ""
+"Front panel your %s %s will be updated\n"
+"This may take a few minutes"
+msgstr ""
+
 #, fuzzy, python-format
 msgid "Front processor version: %s"
 msgstr "نسخه GStreamer: "
 
 msgid "Full Range RGB"
 msgstr ""
+
+#, fuzzy
+msgid "Full factory reset"
+msgstr "بازگشت به حالت کارخانه ای"
 
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if the content aspect ratio does not match the screen ratio)
 #, fuzzy
@@ -6613,6 +6629,9 @@ msgstr ""
 msgid "History next"
 msgstr ""
 
+msgid "Hold First Frame"
+msgstr ""
+
 msgid "Hold screen"
 msgstr "نگه داشتن صفحه نمایش"
 
@@ -6690,9 +6709,6 @@ msgid "Hotkey zap"
 msgstr ""
 
 msgid "Hotplug"
-msgstr ""
-
-msgid "Hour"
 msgstr ""
 
 msgid "Hourly"
@@ -6876,6 +6892,9 @@ msgstr ""
 msgid "Image: "
 msgstr "عکس: "
 
+msgid "Immediately restart selected devices."
+msgstr ""
+
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr ""
 
@@ -6968,9 +6987,8 @@ msgstr ""
 msgid "Indonesian"
 msgstr ""
 
-#, fuzzy
 msgid "Inetd Recovery"
-msgstr "خروج از ویرایشگر"
+msgstr ""
 
 msgid "Inetd recovery"
 msgstr ""
@@ -7133,6 +7151,9 @@ msgstr "فقط هارد داخلی"
 #, fuzzy
 msgid "Internet"
 msgstr "رابط:"
+
+msgid "Internet (ntp)"
+msgstr ""
 
 msgid "Interval between keys when repeating:"
 msgstr ""
@@ -7318,7 +7339,7 @@ msgstr "ارتباط LAN"
 
 #, fuzzy
 msgid "LCD Setup"
-msgstr "تنظیمات تصویر در تصویر"
+msgstr "تنظیمات"
 
 #, fuzzy
 msgid "LCD scroll speed"
@@ -7334,7 +7355,7 @@ msgstr "فرمت"
 
 #, fuzzy
 msgid "LED Setup"
-msgstr "تنظیمات تصویر در تصویر"
+msgstr "تنظیمات"
 
 #, fuzzy
 msgid "LED Standby"
@@ -7546,9 +7567,8 @@ msgstr ""
 msgid "Load"
 msgstr "آماده سازی"
 
-#, fuzzy
 msgid "Load EPG Cache"
-msgstr "آماده سازی"
+msgstr ""
 
 msgid "Load only specific days in EPG"
 msgstr ""
@@ -7771,9 +7791,10 @@ msgstr ""
 msgid "Manufacturer"
 msgstr "تولید کننده"
 
+#, python-format
 msgid ""
 "Manufacturer reset in progress\n"
-"Please wait until enigma2 restarts"
+"Please wait until your %s %s restarts"
 msgstr ""
 
 msgid "Mara M9"
@@ -8033,7 +8054,7 @@ msgstr "برو پایین لیست"
 
 #, fuzzy
 msgid "Move down a screen"
-msgstr "برو پایین لیست"
+msgstr "نگه داشتن صفحه نمایش"
 
 #, fuzzy
 msgid "Move down to last entry"
@@ -8076,7 +8097,7 @@ msgstr "مراجعه به اولین کانال"
 
 #, fuzzy
 msgid "Move to last line / screen"
-msgstr "برو پایین لیست"
+msgstr "جابجایی تصویر در تصویر"
 
 msgid "Move to position X"
 msgstr "جابجایی به موقعت X"
@@ -8095,13 +8116,11 @@ msgstr "مراجعه به رخداد قبلی"
 msgid "Move to the previous skin"
 msgstr "مراجعه به رخداد قبلی"
 
-#, fuzzy
 msgid "Move up a line"
-msgstr "مراجعه به اولین کانال"
+msgstr ""
 
-#, fuzzy
 msgid "Move up a screen"
-msgstr "مراجعه به رخداد قبلی"
+msgstr ""
 
 #, fuzzy
 msgid "Move up to first entry"
@@ -8278,12 +8297,8 @@ msgstr ""
 msgid "NOW"
 msgstr "اکنون"
 
-msgid "NTP"
+msgid "NTP Hostname"
 msgstr ""
-
-#, fuzzy
-msgid "NTP server"
-msgstr "Nameserver"
 
 msgid "NTSC"
 msgstr "NTSC"
@@ -8390,6 +8405,10 @@ msgstr "هدایتگر شبکه"
 
 msgid "Network:"
 msgstr "شبکه:"
+
+#, fuzzy
+msgid "Never"
+msgstr "هیچ وقت"
 
 msgid "Never decrypt the content while recording. This overrides the individual timer settings globally. If enabled, recordings are stored in crypted presentation and must be decrypted afterwards (sometimes called offline decoding). Default: off."
 msgstr ""
@@ -8825,9 +8844,6 @@ msgstr ""
 msgid "On valid ONIDs, ignore frequency sub network part"
 msgstr ""
 
-msgid "Once per day"
-msgstr ""
-
 msgid "One"
 msgstr "یک"
 
@@ -9067,14 +9083,15 @@ msgid "Parent directory"
 msgstr "شاخه اصلی"
 
 #, fuzzy
+msgid "Parental Control"
+msgstr "کنترل والدین"
+
+#, fuzzy
 msgid "Parental Control Setup"
 msgstr "تنظیمات کنترل والدین"
 
 msgid "Parental Guidance Recommended"
 msgstr ""
-
-msgid "Parental control"
-msgstr "کنترل والدین"
 
 msgid "Parental control services editor"
 msgstr "ویرایشگر کانال های کنترل والدین"
@@ -9478,15 +9495,8 @@ msgstr "لطفا صبر کنید تا شبکه شما تست شود"
 msgid "Please wait while your network is restarting..."
 msgstr "راه اندازی دوباره شبکه شما ، لطفا صبر کنید"
 
-msgid "Please wait, restarting cardserver."
-msgstr ""
-
-#, fuzzy
-msgid "Please wait, restarting softcam and cardserver."
-msgstr "لطفا صبر کنید - در حال آماده سازی لیست"
-
-#, fuzzy
-msgid "Please wait, restarting softcam."
+#, fuzzy, python-format
+msgid "Please wait, restarting %s."
 msgstr "لطفا صبر کنید - در حال آماده سازی لیست"
 
 msgid "Please wait..."
@@ -9599,10 +9609,8 @@ msgstr ""
 msgid "Power On Display"
 msgstr ""
 
-#
-#, fuzzy
 msgid "Power Timers"
-msgstr "خودکار flesh"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr ""
@@ -10077,12 +10085,6 @@ msgstr ""
 msgid "Receiver or driver does not support FCC"
 msgstr ""
 
-msgid "Receiver reads the stored EPG data every (hours)."
-msgstr ""
-
-msgid "Receiver stores the EPG data every (hours)."
-msgstr ""
-
 msgid "Reception settings"
 msgstr "تنظیمات پذیرش"
 
@@ -10140,7 +10142,7 @@ msgstr "در حال ضبط"
 
 #, fuzzy
 msgid "Recovery Mode"
-msgstr "ضبط"
+msgstr "حالت"
 
 msgid "Red"
 msgstr ""
@@ -10238,11 +10240,45 @@ msgstr ""
 msgid "Remove all alternatives"
 msgstr ""
 
+msgid "Remove all bouquet/tuning data"
+msgstr ""
+
+#, fuzzy
+msgid "Remove all keymap data"
+msgstr "حذف علامت"
+
 msgid "Remove all logfiles"
 msgstr ""
 
+#, fuzzy
+msgid "Remove all network data"
+msgstr "انتخاب آداپتور شبکه"
+
 msgid "Remove all new found flags"
 msgstr ""
+
+#, fuzzy
+msgid "Remove all other data"
+msgstr "حذف مورد"
+
+#, fuzzy
+msgid "Remove all plugin setting data"
+msgstr "حذف پلاگین ها"
+
+msgid "Remove all resume point data"
+msgstr ""
+
+#, fuzzy
+msgid "Remove all settings data"
+msgstr "تنظیمات پیش فرض"
+
+#, fuzzy
+msgid "Remove all skin data"
+msgstr "حذف علامت"
+
+#, fuzzy
+msgid "Remove all timer data"
+msgstr "حذف علامت"
 
 #, fuzzy
 msgid "Remove bookmark"
@@ -10401,6 +10437,9 @@ msgstr ""
 
 msgid "Reset playback position"
 msgstr "بازنشانی مکان پخش"
+
+msgid "Reset the selected devices when the GREEN button is pressed."
+msgstr ""
 
 #
 msgid "Reset video enhancement settings to system defaults?"
@@ -10719,7 +10758,7 @@ msgstr "ماهواره"
 
 #, fuzzy
 msgid "SatPI setup"
-msgstr "تنظیم سافتکم"
+msgstr "تنظیمات تصویر در تصویر"
 
 msgid "Satellite"
 msgstr "ماهواره"
@@ -10758,9 +10797,8 @@ msgstr "ذخیره"
 msgid "Save / Enter text and exit"
 msgstr ""
 
-#, fuzzy
 msgid "Save EPG Cache"
-msgstr "یک EPG"
+msgstr ""
 
 msgid "Save EPG data"
 msgstr ""
@@ -10998,6 +11036,36 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' to remove all keymap data. Selecting this option will remove all keymap override data and restore the default keymap definitions."
+msgstr ""
+
+msgid "Select 'Yes' to remove all main settings configuration data. Selecting this option will set all Enigma2 settings back to their default values.  This will also cause Enigma2 to run the Welcome Wizard on restart."
+msgstr ""
+
+msgid "Select 'Yes' to remove all media player resume data. Selecting this option will remove the data used to allow playback of media files to resume from the position where playback was last stopped. Playback position of recordings is not affected."
+msgstr ""
+
+msgid "Select 'Yes' to remove all network data. Selecting this option will remove all network data including automounts and network connection data including connection accounts and passwords. This could cause some Enigma2 functions to fail if they are configured to use these network resources."
+msgstr ""
+
+msgid "Select 'Yes' to remove all other files and directories not covered by the options above."
+msgstr ""
+
+msgid "Select 'Yes' to remove all plugin configuration data. Selecting this option will remove all plugin configuration data that is stored in the Enigma2 configuration folder. This will cause all affected plugins to return to their default settings. This could cause some plugins to not function until configured."
+msgstr ""
+
+msgid "Select 'Yes' to remove all settings, tuning data, timers, resume pointers etc. Selecting this option will restore the configuration to the initial settings before any configuration settings were applied. This is the most reliable form of Factory Reset."
+msgstr ""
+
+msgid "Select 'Yes' to remove all timer configuration data. Selecting this option will clear all timers, autotimers and power timers."
+msgstr ""
+
+msgid "Select 'Yes' to remove all tuning data. Selecting this option will remove all tuning and bouquet data and will make timers non functional until the receiver is retuned."
+msgstr ""
+
+msgid "Select 'Yes' to remove all user customisations of skin data. Selecting this option will remove all user based skin customisations. All affected skins will return to their standard settings. This will also clear any customied boot logos and backdrops."
+msgstr ""
+
 msgid "Select 'Yes' when you want to configure this tuner for ATSC"
 msgstr ""
 
@@ -11046,9 +11114,6 @@ msgstr ""
 msgid "Select CAId"
 msgstr "انتخاب CAId"
 
-msgid "Select Card Server"
-msgstr "انتخاب سرور کارت"
-
 msgid "Select Channel"
 msgstr "انتخاب کانال"
 
@@ -11058,17 +11123,20 @@ msgstr ""
 msgid "Select HDD"
 msgstr "انتخاب هارد"
 
-msgid "Select Softcam"
-msgstr "انتخاب سافتکم"
-
 msgid "Select a bouquet"
 msgstr "انتخاب لیست"
+
+msgid "Select a cardserver from the available list."
+msgstr ""
 
 msgid "Select a movie"
 msgstr "انتخاب فیلم"
 
 msgid "Select a network adapter"
 msgstr "انتخاب آداپتور شبکه"
+
+msgid "Select a softcam from the available list."
+msgstr ""
 
 msgid "Select a tuner"
 msgstr "انتخاب تیونر"
@@ -11100,6 +11168,10 @@ msgstr "انتخاب محل نسخه پشتیبان"
 
 msgid "Select between entering an IP address or a domain."
 msgstr ""
+
+#, fuzzy
+msgid "Select cardserver"
+msgstr "انتخاب سرور کارت"
 
 msgid "Select channel"
 msgstr ""
@@ -11142,6 +11214,9 @@ msgstr ""
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr ""
 
+msgid "Select how you want your receiver to keep the correct time, either from the DVB transponder, or from the internet using NTP. Or use Auto, which will favour using NTP, but will fall back to transponder time when no internet connection is available."
+msgstr ""
+
 msgid "Select input device"
 msgstr "انتخاب وسیله ورودی"
 
@@ -11180,6 +11255,10 @@ msgstr "انتخاب کانال برای اضافه شدن"
 
 msgid "Select slot"
 msgstr ""
+
+#, fuzzy
+msgid "Select softcam"
+msgstr "انتخاب سافتکم"
 
 msgid "Select sort method:"
 msgstr ""
@@ -11629,9 +11708,6 @@ msgstr "منوی تنظیمات"
 
 msgid "Setup mode"
 msgstr "حالت تنظیمات"
-
-msgid "Setup network time synchronization interval."
-msgstr ""
 
 msgid "Setup your positioner"
 msgstr "تنظیم مکان یاب شما"
@@ -12227,6 +12303,10 @@ msgstr "اسلوونیایی"
 msgid "Slow"
 msgstr "آهسته"
 
+#, fuzzy
+msgid "Slow Motion"
+msgstr "سرعت حرکت آهسته"
+
 msgid "Slow motion speeds"
 msgstr "سرعت حرکت آهسته"
 
@@ -12260,18 +12340,18 @@ msgstr "اجتماعی/سیاسی/اقتصادی"
 msgid "SocketMMI"
 msgstr ""
 
-#, fuzzy
 msgid "Soft multiboot: "
-msgstr "چندین ماهواره"
+msgstr ""
 
 #, fuzzy
 msgid "Softcam"
 msgstr "تنظیم سافتکم"
 
-msgid "Softcam Setup"
+#, fuzzy
+msgid "Softcam Actions"
 msgstr "تنظیم سافتکم"
 
-msgid "Softcam setup"
+msgid "Softcam Setup"
 msgstr "تنظیم سافتکم"
 
 msgid "Software"
@@ -12726,9 +12806,8 @@ msgstr "درخواست جریان"
 msgid "Streaming"
 msgstr "درخواست جریان"
 
-#, fuzzy
 msgid "Streaming Clients"
-msgstr "درخواست جریان"
+msgstr ""
 
 msgid "Streaming clients info"
 msgstr ""
@@ -12757,7 +12836,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Subtitle Setup"
-msgstr "زیرنویس ها"
+msgstr "تنظیمات زیرنویس"
 
 msgid "Subtitle alignment"
 msgstr "تراز زیرنویس"
@@ -12948,16 +13027,7 @@ msgstr ""
 msgid "Symbol rate:"
 msgstr ""
 
-msgid "Sync NTP every (minutes)"
-msgstr ""
-
 msgid "Sync failure moving back to origin !"
-msgstr ""
-
-msgid "Sync time using"
-msgstr ""
-
-msgid "Synchronize system time using transponder or internet."
 msgstr ""
 
 msgid "Syrian Arab Republic"
@@ -13191,6 +13261,10 @@ msgstr ""
 msgid "The MovieCut plugin is not installed."
 msgstr ""
 
+#, fuzzy
+msgid "The PIN code entered is incorrect."
+msgstr "رمز های وارد شده متفاوت هستند"
+
 msgid "The PIN code has been changed successfully."
 msgstr "رمز با موفقیت تغییر کرد"
 
@@ -13237,6 +13311,9 @@ msgid "The frame rate of the recording. Ideally, this will match the frame rate 
 msgstr ""
 
 msgid "The height of the picture. The input will be scaled to match this value."
+msgstr ""
+
+msgid "The hostname or the IP address of the NTP server to synchronise the time with."
 msgstr ""
 
 #
@@ -13306,12 +13383,11 @@ msgstr ""
 "بسته مدیریت نرم افزار نصب نشده است\n"
 "لطفا آن را نصب کنید"
 
-msgid "The speed of the fan when receiver is in normal use."
+msgid "The speed of the fan when your %s %s is in normal use."
 msgstr ""
 
-#, fuzzy
-msgid "The speed of the fan when receiver is in standby mode."
-msgstr "رابط کاربری دستگاه شما در حال راه اندازی مجدد است"
+msgid "The speed of the fan when your %s %s is in standby mode."
+msgstr ""
 
 #, python-format
 msgid "The status of the current image could not be checked because %s can not be reached."
@@ -13326,18 +13402,18 @@ msgstr ""
 msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
-#, fuzzy
-msgid "The user interface of your receiver is restarting"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting"
 msgstr "رابط کاربری دستگاه شما در حال راه اندازی مجدد است"
 
-#, fuzzy
+#, fuzzy, python-format
 msgid ""
-"The user interface of your receiver is restarting\n"
+"The user interface of your %s %s is restarting\n"
 "due to an error in mytest.py"
 msgstr "رابط کاربری دستگاه شما در حال راه اندازی مجدد است"
 
-#, fuzzy
-msgid "The user interface of your receiver is restarting in debug mode"
+#, fuzzy, python-format
+msgid "The user interface of your %s %s is restarting in debug mode"
 msgstr "رابط کاربری دستگاه شما در حال راه اندازی مجدد است"
 
 msgid "The width of the picture. The input will be scaled to match this value."
@@ -13400,6 +13476,12 @@ msgid "This field allows you to search an additional symbol rate up to %s."
 msgstr ""
 
 msgid ""
+"This image is intended for developers and testers.\n"
+"No support will be provided!\n"
+"Do you understand this?"
+msgstr ""
+
+msgid ""
 "This info is for developers only.\n"
 "For normal users it is not relevant.\n"
 "Please don't panic if you see values displayed looking suspicious!"
@@ -13411,7 +13493,7 @@ msgstr ""
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr ""
 
-msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since the receiver was last booted."
+msgid "This is the prefix of each entry in the debug log. 'boot time' is the number of seconds since your %s %s was last booted."
 msgstr ""
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
@@ -13523,6 +13605,9 @@ msgid "This option allows you to show the full screen path leading to the curren
 msgstr ""
 
 msgid "This option allows you to switch audio to BT speakers."
+msgstr ""
+
+msgid "This option allows you to use video sync mode."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -13657,6 +13742,9 @@ msgstr ""
 #, fuzzy
 msgid "Time style"
 msgstr "نوع لیست"
+
+msgid "Time synchronization method"
+msgstr ""
 
 msgid "Time to execute command or script"
 msgstr ""
@@ -13888,7 +13976,7 @@ msgstr ""
 msgid "Transponder"
 msgstr ""
 
-msgid "Transponder time"
+msgid "Transponder Time"
 msgstr ""
 
 msgid "Transport Stream Type"
@@ -14085,9 +14173,10 @@ msgstr ""
 msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
+#, python-format
 msgid ""
 "Unattended update in progress\n"
-"Please wait until your receiver reboots\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 
@@ -14162,6 +14251,10 @@ msgid "Unsupported"
 msgstr ""
 
 #, fuzzy
+msgid "Until standby/restart"
+msgstr "خاموشی موقت / راه اندازی مجدد"
+
+#, fuzzy
 msgid "Unzipping Image"
 msgstr "در حال دانلود"
 
@@ -14192,8 +14285,9 @@ msgid "Update completed, %d package was installed."
 msgid_plural "Update completed, %d packages were installed."
 msgstr[0] ""
 
-msgid "Update completed. Do you want to reboot your receiver?"
-msgstr ""
+#, fuzzy, python-format
+msgid "Update completed. Do you want to reboot your %s %s?"
+msgstr "آیا میخواهید تنظیمات شما بازگردانی شود ؟"
 
 #, fuzzy
 msgid "Update failed!"
@@ -14501,6 +14595,10 @@ msgstr "خروجی تصویر"
 
 msgid "Video setup"
 msgstr "تنظیمات تصویر"
+
+#, fuzzy
+msgid "Video sync mode"
+msgstr "حالت تصویر"
 
 msgid "Video wizard"
 msgstr "هدایتگر تصویر"
@@ -14965,21 +15063,6 @@ msgstr ""
 msgid "When enabled, the length of each recording will be shown in the movielist (this might cause some additional loading time)."
 msgstr ""
 
-msgid "When enabled, the receiver will automatically use the audio track which you selected before."
-msgstr ""
-
-msgid "When enabled, the receiver will automatically use the subtitles which you selected before."
-msgstr ""
-
-msgid "When enabled, the receiver will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
-msgstr ""
-
-msgid "When enabled, the receiver will select an AC3 track (when available)."
-msgstr ""
-
-msgid "When enabled, the receiver will select an AC3+ track (when available)."
-msgstr ""
-
 msgid "When enabled, this setting has more weight than 'Preferred tuner for recordings'."
 msgstr ""
 
@@ -14996,6 +15079,21 @@ msgid "When enabled, you will see dev, staticdev, dbg, doc, src and po packages 
 msgstr ""
 
 msgid "When enabled, you will see the available revision on github"
+msgstr ""
+
+msgid "When enabled, your %s %s will automatically use the audio track which you selected before."
+msgstr ""
+
+msgid "When enabled, your %s %s will automatically use the subtitles which you selected before."
+msgstr ""
+
+msgid "When enabled, your %s %s will no longer monitor the tuned transponder for possible changes. Do not use this option unless you know what you are doing."
+msgstr ""
+
+msgid "When enabled, your %s %s will select an AC3 track (when available)."
+msgstr ""
+
+msgid "When enabled, your %s %s will select an AC3+ track (when available)."
 msgstr ""
 
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
@@ -15275,6 +15373,36 @@ msgstr ""
 msgid "Your %s %s (kernel %s) does not have an internet connection"
 msgstr ""
 
+#, python-format
+msgid "Your %s %s goes to WOL"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting into android mode"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is rebooting into recovery mode"
+msgstr ""
+
+#, python-format
+msgid "Your %s %s is shutting down"
+msgstr ""
+
+msgid "Your %s %s reads the stored EPG data every (hours)."
+msgstr ""
+
+msgid "Your %s %s stores the EPG data every (hours)."
+msgstr ""
+
+#, python-format
+msgid "Your %s %s?"
+msgstr ""
+
 msgid "Your PIN code is 0000. This is the default PIN code and it disables parental control!\n"
 msgstr ""
 
@@ -15284,14 +15412,10 @@ msgstr ""
 msgid "Your current collection will get lost!"
 msgstr ""
 
+#, python-format
 msgid ""
-"Your front panel will be updated\n"
-"This may take a few minutes"
-msgstr ""
-
-msgid ""
-"Your front processor will be updated\n"
-"Please wait until your receiver reboots\n"
+"Your frontprocessor will be updated\n"
+"Please wait until your %s %s reboots\n"
 "This may take a few minutes"
 msgstr ""
 
@@ -15319,9 +15443,6 @@ msgstr ""
 msgid "Your receiver does not have an internet connection"
 msgstr ""
 
-msgid "Your receiver goes to WOL"
-msgstr ""
-
 msgid "Your receiver is not connected to the internet, please check your network settings and try again."
 msgstr ""
 
@@ -15340,19 +15461,8 @@ msgid ""
 "Please press OK to continue."
 msgstr ""
 
-msgid "Your receiver is rebooting"
-msgstr ""
-
-msgid "Your receiver is rebooting into android mode"
-msgstr ""
-
-msgid "Your receiver is rebooting into recovery mode"
-msgstr ""
-
-msgid "Your receiver is shutting down"
-msgstr ""
-
-msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your receiver."
+#, python-format
+msgid "Your receiver might be unusable now. Please consult the manual for further assistance before rebooting your %s %s."
 msgstr ""
 
 #, python-format
@@ -15553,6 +15663,10 @@ msgstr ""
 msgid "always"
 msgstr "همیشه"
 
+#, fuzzy
+msgid "and"
+msgstr "باند"
+
 msgid "and never ask in this session again"
 msgstr ""
 
@@ -15623,9 +15737,6 @@ msgstr "سیاه"
 msgid "black & white"
 msgstr "سیاه و سفید"
 
-msgid "blacklist"
-msgstr "لیست سیاه"
-
 msgid "blue"
 msgstr "آبی"
 
@@ -15647,6 +15758,10 @@ msgstr ""
 #, fuzzy
 msgid "cancel"
 msgstr "انصراف"
+
+#, fuzzy
+msgid "cardserver"
+msgstr "راه اندازی دوباره شبکه"
 
 msgid "cartoon/puppets"
 msgstr ""
@@ -16541,6 +16656,10 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
+#, fuzzy
+msgid "softcam"
+msgstr "راه اندازی دوباره تست"
+
 msgid "special (general)"
 msgstr ""
 
@@ -16683,9 +16802,6 @@ msgid "unpublished"
 msgstr ""
 
 msgid "untestable"
-msgstr ""
-
-msgid "until standby/restart"
 msgstr ""
 
 msgid "use best / controlled by HDMI"
