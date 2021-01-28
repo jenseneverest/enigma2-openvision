@@ -4,7 +4,7 @@ try:
 except ImportError:
 	import urllib
 
-from enigma import eConsoleAppContainer, eDVBResourceManager, eGetEnigmaDebugLvl, eLabel, eTimer, getBoxBrand, getBoxType, getDesktop
+from enigma import eConsoleAppContainer, eDVBResourceManager, eGetEnigmaDebugLvl, eLabel, eTimer, getBoxBrand, getBoxType, getDesktop, getE2Rev
 from os import listdir, popen, remove
 from os.path import getmtime, isfile, join as pathjoin
 from six import PY2, PY3, ensure_str as ensurestr, text_type as texttype
@@ -110,6 +110,7 @@ class About(Screen):
 		EnigmaVersion = _("Enigma2 version: ") + EnigmaVersion
 		self["EnigmaVersion"] = StaticText(EnigmaVersion)
 		AboutText += "\n" + EnigmaVersion + "\n"
+		AboutText += _("Enigma2 revision: ") + getE2Rev() + "\n"
 		AboutText += _("Last update: ") + about.getUpdateDateString() + "\n"
 		AboutText += _("Enigma2 (re)starts: %d\n") % config.misc.startCounter.value
 		AboutText += _("Enigma2 debug level: %d\n") % eGetEnigmaDebugLvl()
@@ -122,6 +123,12 @@ class About(Screen):
 
 		AboutText += _("Drivers version: ") + about.getDriverInstalledDate() + "\n"
 		AboutText += _("Kernel version: ") + boxbranding.getKernelVersion() + "\n"
+
+		modulelayout = popen('find /lib/modules/ -type f -name "openvision.ko" -exec modprobe --dump-modversions {} \; | grep "module_layout" | cut -c-11').read().strip()
+		if modulelayout is not None and modulelayout != "":
+			AboutText += _("Kernel module layout: ") + modulelayout + "\n"
+		else:
+			AboutText += _("Kernel module layout: ") + _("N/A") + "\n"
 
 		GStreamerVersion = _("GStreamer version: ") + about.getGStreamerVersionString(cpu).replace("GStreamer", "")
 		self["GStreamerVersion"] = StaticText(GStreamerVersion)
@@ -490,25 +497,26 @@ class Geolocation(Screen):
 		GeolocationText += "\n"
 
 		try:
-			continent = geolocation.get("continent", None)
+			geolocationData = geolocation.getGeolocationData(fields="continent,country,regionName,city,timezone,currency,lat,lon", useCache=True)
+			continent = geolocationData.get("continent", None)
 			if isinstance(continent, texttype):
 				continent = ensurestr(continent.encode(encoding="UTF-8", errors="ignore"))
 			if continent is not None:
 				GeolocationText += _("Continent: ") + continent + "\n"
 
-			country = geolocation.get("country", None)
+			country = geolocationData.get("country", None)
 			if isinstance(country, texttype):
 				country = ensurestr(country.encode(encoding="UTF-8", errors="ignore"))
 			if country is not None:
 				GeolocationText += _("Country: ") + country + "\n"
 
-			state = geolocation.get("regionName", None)
+			state = geolocationData.get("regionName", None)
 			if isinstance(state, texttype):
 				state = ensurestr(state.encode(encoding="UTF-8", errors="ignore"))
 			if state is not None:
 				GeolocationText += _("State: ") + state + "\n"
 
-			city = geolocation.get("city", None)
+			city = geolocationData.get("city", None)
 			if isinstance(city, texttype):
 				city = ensurestr(city.encode(encoding="UTF-8", errors="ignore"))
 			if city is not None:
@@ -516,13 +524,13 @@ class Geolocation(Screen):
 
 			GeolocationText += "\n"
 
-			timezone = geolocation.get("timezone", None)
+			timezone = geolocationData.get("timezone", None)
 			if isinstance(timezone, texttype):
 				timezone = ensurestr(timezone.encode(encoding="UTF-8", errors="ignore"))
 			if timezone is not None:
 				GeolocationText += _("Timezone: ") + timezone + "\n"
 
-			currency = geolocation.get("currency", None)
+			currency = geolocationData.get("currency", None)
 			if isinstance(currency, texttype):
 				currency = ensurestr(currency.encode(encoding="UTF-8", errors="ignore"))
 			if currency is not None:
@@ -530,11 +538,11 @@ class Geolocation(Screen):
 
 			GeolocationText += "\n"
 
-			latitude = geolocation.get("lat", None)
+			latitude = geolocationData.get("lat", None)
 			if str(float(latitude)) is not None:
 				GeolocationText += _("Latitude: ") + str(float(latitude)) + "\n"
 
-			longitude = geolocation.get("lon", None)
+			longitude = geolocationData.get("lon", None)
 			if str(float(longitude)) is not None:
 				GeolocationText += _("Longitude: ") + str(float(longitude)) + "\n"
 			self["AboutScrollLabel"] = ScrollLabel(GeolocationText)
@@ -830,8 +838,9 @@ class SystemNetworkInfo(Screen):
 		self.AboutText += _("Bytes received:") + "\t" + rx_bytes + "\n"
 		self.AboutText += _("Bytes sent:") + "\t" + tx_bytes + "\n"
 
-		isp = geolocation.get("isp", None)
-		isporg = geolocation.get("org", None)
+		geolocationData = geolocation.getGeolocationData(fields="isp,org,mobile,proxy,query", useCache=True)
+		isp = geolocationData.get("isp", None)
+		isporg = geolocationData.get("org", None)
 		if isinstance(isp, texttype):
 			isp = ensurestr(isp.encode(encoding="UTF-8", errors="ignore"))
 		if isinstance(isporg, texttype):
@@ -843,19 +852,19 @@ class SystemNetworkInfo(Screen):
 			else:
 				self.AboutText += _("ISP: ") + isp + "\n"
 
-		mobile = geolocation.get("mobile", False)
+		mobile = geolocationData.get("mobile", False)
 		if mobile is not False:
 			self.AboutText += _("Mobile: ") + _("Yes") + "\n"
 		else:
 			self.AboutText += _("Mobile: ") + _("No") + "\n"
 
-		proxy = geolocation.get("proxy", False)
+		proxy = geolocationData.get("proxy", False)
 		if proxy is not False:
 			self.AboutText += _("Proxy: ") + _("Yes") + "\n"
 		else:
 			self.AboutText += _("Proxy: ") + _("No") + "\n"
 
-		publicip = geolocation.get("query", None)
+		publicip = geolocationData.get("query", None)
 		if str(publicip) != "":
 			self.AboutText += _("Public IP: ") + str(publicip) + "\n"
 
